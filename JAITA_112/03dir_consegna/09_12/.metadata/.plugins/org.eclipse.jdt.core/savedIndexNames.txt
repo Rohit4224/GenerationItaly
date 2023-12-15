@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+/home/rohit/Desktop/Corsi_Generation/JAITA_112/03dir_consegna/09_12/.metadata/.plugins/org.eclipse.jdt.core
-3006922991.index
-1865797976.index
