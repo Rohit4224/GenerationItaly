@@ -1,0 +1,22 @@
+package main;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// lavorate in un biglietteria a Vezio.
+		// Sapete che il  biglietto intero costa 10€
+		// che il museo applica seguenti sconti (non cumulabili), piu avvantoggio in caso se ci sono due sconti applicabile
+		// - residenti a Vezio e a Como entrano gratis
+		// - studenti hanno diritto al 30% di sconto
+		// - under 12 e gli over 65 hanno diritto al 50% di sconto
+		// - militari e i medici hanno 65% sconto
+		
+		// scrivere un programma che chieda i dati all'utente e calcoli il prezzo del suo biglietto.
+		
+		
+
+	}
+
+}

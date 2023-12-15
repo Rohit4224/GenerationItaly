@@ -1,0 +1,115 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main_3 {
+
+	public static void main(String[] args) {
+//		3- Gestisco gli ingressi a un cinema.
+//		Chiedere il nome,l'età e il lavoro svolto.
+//		Il prezzo base del biglietto costa 8€ a persona.
+//		Scontistiche:
+//			Se la persona è uno studente risparmia 2€;
+//			Se la persona è over65 paga la metà;
+//			Se la persona è un militare o un poliziotto risparmia 3€;
+//			
+//		Sovrapprezzi
+//			Se la persona è un medico paga 2€ in più;
+//			Se la persona ha tra i 25 e i 32 anni compresi paga 1€ in più.
+//		
+//		Se la persona è in un gruppo, permettere di calcolare anche il biglietto delle altre persone.
+//		Se il gruppo supera le 5 persone, scontare 2€ dal prezzo totale del biglietto.
+//		Stampare lo scontrino col prezzo del biglietto nominativo e la somma del prezzo dei singoli biglietti
+//		(Quindi voglio vedere il nome del cliente e il prezzo del suo biglietto e alla fine il prezzo e lo sconto applicato)
+
+		
+		//D
+		Scanner input;
+		int numInGroup;
+		String name;
+		int age;
+		String work;
+		int basePrice;
+		boolean student;
+		//boolean over65;
+		//boolean militarPolice;
+		//boolean medico;
+		//boolean age2535;
+		Double pricePersona;
+		Double priceTotal;
+		Double discount; 
+		int count;
+		String risposta;
+		int discountTotale;
+		
+		//I
+		input = new Scanner(System.in);
+		System.out.println("Scrivi il numero di persone: ");
+		numInGroup = Integer.parseInt(input.nextLine());
+		basePrice = 8;
+		count = 0;
+		discount = 0.0;
+		priceTotal = 0;
+		risposta = "";
+		discountTotale = 0;
+		
+		//C
+		while (numInGroup > 0)
+		{
+			System.out.println((count + 1) + "° Persona: ");
+			System.out.println("Scrivi il nome: ");
+			name = input.nextLine();
+			System.out.println("Scrivi l'età: ");
+			age = Integer.parseInt(input.nextLine());
+			System.out.println("Scrivi il lavoro svolto: ");
+			work = input.nextLine().toLowerCase();
+			System.out.println("Scrivi Y se sei studente, altimenti N");
+			student = input.nextLine().equalsIgnoreCase("y");
+			
+			pricePersona = basePrice;
+			discount = 0;
+			discount += (student ? 2 : 0) 
+						+ (work.equalsIgnoreCase("militare") || work.equalsIgnoreCase("poliziotto")? 3 : 0);
+			pricePersona -= discount;
+			//pricePersona = age > 65 ? (pricePersona/2) + (discount += (pricePersona/2)) : pricePersona;
+			
+			if (age > 65)
+			{
+				pricePersona /= 2.0;
+				discount += pricePersona;
+			}
+			
+			pricePersona = work.equalsIgnoreCase("medico") ? (pricePersona + 2) : pricePersona;
+			basePrice = work.equalsIgnoreCase("medico") ? (basePrice += 2) : basePrice;
+			
+			pricePersona = age >= 25 && age < 32 ? (pricePersona += 1) : pricePersona;
+			basePrice = age >= 25 && age < 32 ? (basePrice += 1) : basePrice;
+			
+			risposta += (count + 1) + "° Persona: "
+						+ "\nIl nome: " + Character.toUpperCase(name.charAt(0)) + name.toLowerCase().substring(1)
+						+ "\nL'età: " + age
+						+ "\nIl lavoro svolto: " + Character.toUpperCase(work.charAt(0)) + work.substring(1)
+						+ "\nStudent: " + (student ? "Si" : "No")
+						+ "\nIl Prezzo prima dello sconto: " + basePrice
+						+ "\nSconto: " + discount
+						+ "\nIl Prezzo Finale: " + pricePersona
+						+ "\n--------------------------------------------------\n";
+				
+			discountTotale += discount; 
+			count++;
+			numInGroup--;
+		}
+		
+		if (count > 5)
+		{
+			discount += 2;
+			priceTotal -= discount;
+		}
+		
+		input.close();
+		//O
+		
+		System.out.println(risposta);
+	}
+
+}

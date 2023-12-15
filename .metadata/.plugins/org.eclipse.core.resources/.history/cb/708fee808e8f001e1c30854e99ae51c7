@@ -1,0 +1,24 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// D
+		String stazionePartenza;
+		String stazioneArrivo;
+		Scanner tastiera;
+		
+		// I
+		tastiera = new Scanner(System.in);
+		stazionePartenza = "Centrale Milano";
+		
+		System.out.println("In che stazione vuoi andare");
+		stazioneArrivo = tastiera.nextLine();
+
+	}
+
+}

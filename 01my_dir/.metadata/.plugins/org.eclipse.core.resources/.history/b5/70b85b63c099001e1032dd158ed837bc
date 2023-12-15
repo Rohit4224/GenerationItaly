@@ -1,0 +1,38 @@
+package main;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		//D
+		Scanner file;
+		Scanner input;
+		String percorso;
+		String[] prodotti;
+		double[] prezzi;
+		int dimension; // prima riga del file
+		int i;
+		
+		//I
+		percorso = "src/res/Dati.txt";
+		file = new Scanner(new File(percorso));
+		input = new Scanner(System.in);
+		
+		dimension = Integer.parseInt(file.nextLine());
+		
+		prodotti = new String[dimension];
+		prezzi = new String[dimension];
+		
+		file.close();
+		input.close();
+		//C
+		
+		//O
+	}
+
+}

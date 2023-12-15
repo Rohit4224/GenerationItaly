@@ -1,0 +1,20 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args)
+	{
+		//D
+		Scanner tastiera;
+		int age;
+		String name;
+		
+		//I
+		tastiera = new Scanner(System.in);
+
+	}
+
+}

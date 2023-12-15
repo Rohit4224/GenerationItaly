@@ -1,0 +1,37 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// scrivere una programma che calcoli le entrate annuali di un lavoratore
+		//nome e cognome
+		//stipendio medio Mensile
+		//mensilità contrattuali
+		//stampare in console "Buonasera sign. {cgnome} il suo lordo annuale vale {calcolo}€"
+		String nome;
+		String cognome;
+		int stipendio;
+		double calcolo;
+		
+		Scanner tastiera;
+		
+		tastiera = new Scanner(System.in);
+		
+		System.out.println("Digita il tuo nome");
+		nome = tastiera.nextLine();
+		System.out.println("Digita il tuo cognome");
+		cognome = tastiera.nextLine();
+
+		
+		tastiera.close();
+		
+		
+		calcolo = "Buonasera sign." + cognome + "il suo lordo annuale vale" + calcolo + €"
+		System.out.println(calcolo);
+	}
+
+}

@@ -1,0 +1,51 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main_4 {
+
+	public static void main(String[] args) {
+//		4- Scrivere un programma che permetta di richiedere all’utente di inserire i dati di N studenti, 
+//		dove N è il numero di studenti da chiedere come prima informazione.
+//		I dati da richiedere sono il nome, il voto finale di italiano,di inglese, di informatica e di matematica.
+//		Voglio vedere in console:
+//		- La media complessiva di ogni singolo studente e il nome dello studente con la media ottenuta
+//		- Il nome dello studente e il suo esito(è promosso se ha almeno tre voti maggiori di 5 e la media complessiva è maggiore di 6) 
+//		- Il numero di studenti bocciati
+//		- Il numero di studenti con il voto di informatica superiore a 8
+
+		//D
+		Scanner input;
+		int numStudenti;
+		String name;
+		Double ita;
+		Double ing;
+		Double inf;
+		Double mate;
+		Double mediaStudent;
+		String esito;
+		int bocciati;
+		int numInfGr8;
+		int count;
+		
+		
+		
+		//I
+		System.out.println("Insirisci numeri di studenti:");
+		input = new Scanner(System.in);
+		numStudenti = Integer.parseInt(input.nextLine());
+		count = 0;
+		
+		//C
+		while (numStudenti > 0)
+		{
+			sytem.out.println(num"")
+			numStudenti--;
+			count++;
+		}
+		
+		input.close();
+		//O
+	}
+
+}

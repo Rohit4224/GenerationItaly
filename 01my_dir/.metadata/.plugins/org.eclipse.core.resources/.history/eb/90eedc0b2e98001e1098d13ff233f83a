@@ -1,0 +1,28 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//D
+		Scanner file;
+		Scanner input;
+		String name;
+		int age;
+		String residence;
+		String cercaNome;
+		int cercaAge;
+		String cercaResidence;
+		String risposta;
+		String legenda;
+
+		//I
+		input = new Scanner(System.in);
+		
+		//C
+		
+		//O
+	}
+
+}

@@ -1,0 +1,18 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Leggere da un file le informazioni riguardanti alcuni film proiettati al cinema
+        // I dati saranno: titolo, genere, durata(minuti), annoUscita, vietatoMinori(bool)
+        // Scrivere un menù che permetta all'utente le seguenti scelte:
+        // - Schede complete dei singoli film
+        // - Il titolo dei film antecedenti al 1992
+        // - Il numero di film vietati ai minori
+        // - Il titolo del film più lungo (o dei film)
+        // - La durata media dei film di genere Azione
+		
+		Scanner
+	}
+
+}
