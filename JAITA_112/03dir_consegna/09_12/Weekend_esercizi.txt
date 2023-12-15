@@ -1,0 +1,61 @@
+1- Scrivere un programma che, dato un numero limite da parte dell'utente,
+	restituisca la serie di fibonacci fino all'indice indicato
+	(Fibonacci: ogni numero è dato dal risultato della somma dei due precedenti
+	ESEMPIO: L'utente dice 8, la serie sarà: 1, 1, 2, 3, 5, 8, 13, 21)
+	
+2- Far inserire dei numeri all'utente finche la somma di essi non raggiunge il valore 27(quindi finchè somma < 27).
+	Stampare in console la somma dei numeri inseriti e il numero di volte che l'utente ha 
+	inserito un numero maggiore di 10.
+
+3- Gestisco gli ingressi a un cinema.
+	Chiedere il nome,l'età e il lavoro svolto.
+	Il prezzo base del biglietto costa 8€ a persona.
+	Scontistiche:
+		Se la persona è uno studente risparmia 2€;
+		Se la persona è over65 paga la metà;
+		Se la persona è un militare o un poliziotto risparmia 3€;
+		
+	Sovrapprezzi
+		Se la persona è un medico paga 2€ in più;
+		Se la persona ha tra i 25 e i 32 anni compresi paga 1€ in più.
+	
+	Se la persona è in un gruppo, permettere di calcolare anche il biglietto delle altre persone.
+	Se il gruppo supera le 5 persone, scontare 2€ dal prezzo totale del biglietto.
+	Stampare lo scontrino col prezzo del biglietto nominativo e la somma del prezzo dei singoli biglietti
+	(Quindi voglio vedere il nome del cliente e il prezzo del suo biglietto e alla fine il prezzo e lo sconto applicato)	
+
+4- Scrivere un programma che permetta di richiedere all’utente di inserire i dati di N studenti, 
+	dove N è il numero di studenti da chiedere come prima informazione.
+	I dati da richiedere sono il nome, il voto finale di italiano,di inglese, di informatica e di matematica.
+	Voglio vedere in console:
+	- La media complessiva di ogni singolo studente e il nome dello studente con la media ottenuta
+	- Il nome dello studente e il suo esito(è promosso se ha almeno tre voti maggiori di 5 e la media complessiva è maggiore di 6) 
+	- Il numero di studenti bocciati
+	- Il numero di studenti con il voto di informatica superiore a 8
+	
+5- Creare un programma che gestisca un agenzia viaggi.
+	Formattare un file con le seguenti informazioni: 
+		destinazione
+		mezzo di trasporto
+		giorni di vacanza
+		costo giornaliero
+		numero persone.
+	Creare un programma che acquisite le informazioni dal file sia in grado di calcolare i prezzi dei 
+	singoli viaggi.
+	Calcolo del prezzo:
+	> Prezzo base 100;
+	> se la destinazione è Dubai o Tokyo aggiungo 200, se è Dublino o Londra aggiungo 150, 
+		se è New York o Miami aggiungo 300. In tutti gli altri casi aggiungo 50
+	> se il mezzo di trasporto è aereo o traghetto aggiungo 500, se è treno aggiungo 200, 
+		se è automobile o autobus aggiungo 100. In tutti gli altri casi aggiungo 1000
+	> se le persone sono più di 5 scontare il viaggio del 5%, se invece sono più di 10 scontare il 
+		viaggio del 10%.
+	
+	Stampare in console:
+	-Scheda di ogni viaggio disponibile nel file
+	-Lista destinazioni(senza ripetizioni)
+	-Lista mezzi di trasporto(senza ripetizioni)
+	-Costo medio dei viaggi in aereo
+	-Costo medio dei viaggi a Dubai
+	-Viaggi più economici(Viaggio/i che costano meno tra tutti quelli nel file)
+	-Viaggi di lusso(Viaggio/i che costano di più tra tutti quelli del file)

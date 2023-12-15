@@ -1,0 +1,19 @@
+Scrivere un programma che chieda all'utente nome, eta, residenza e stipendio mensile medio.
+Lo scopo del programma è calcolare le tasse che ogni persona deve pagare.
+Le regole sono:
+- Se è residente a milano parte da una base del 2% dello stipendio mensile, 
+	se ha un età sotto i 21 anni non paga ulteriori tasse, 
+	se ha tra i 21 compresi e i 35 paga l'1% in più, 
+	se ha tra i 35 compre e i 65 paga il 2% in più, 
+	se ha più di 65 anni non paga nulla in più
+- Se è residente a Roma parte da una base del 1.5% dello stipendio mensile,
+	se ha un età sotto i 25 anni non paga ulteriori tasse, 
+	se ha tra i 25 compresi e i 65 paga il 2% in più, 
+	se ha più di 65 anni non paga nulla in più
+- Se è residente a Bergamo parte da una base del 1% dello stipendio mensile,
+	se ha un età sotto i 25 anni paga ulteriori 0.5%, 
+	se ha più di 25 anni compresi paga l'1.5% in più
+- Tutti gli altri posti pagano fissi 2.5% di tasse
+
+Stampare il nome della persona, l'importo in tasse che deve pagare ogni mese e 
+l'importo di tasse che deve pagare annualmente (si tassano gli stipendi annuali, ricordate la 13°!)

@@ -1,0 +1,81 @@
+package main;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// Leggere da un file le informazioni riguardanti alcuni film proiettati al cinema
+        // I dati saranno: titolo, genere, durata(minuti), annoUscita, vietatoMinori(bool)
+        // Scrivere un menù che permetta all'utente le seguenti scelte:
+        // - Schede complete dei singoli film
+        // - Il titolo dei film antecedenti al 1992
+        // - Il numero di film vietati ai minori
+        // - Il titolo del film più lungo (o dei film)
+        // - La durata media dei film di genere Azione
+		
+		//D
+		Scanner file;
+		Scanner input;
+		String titolo;
+		String genere;
+		int durata;
+		int annoUscita;
+		boolean vietatoMinori;
+		String cmd;
+		
+		String menu;
+		String risposta;
+		
+		//I
+		input = new Scanner(System.in);
+		file = new Scanner(new File("src/res/File.txt"));
+		titolo = "";
+		genere = "";
+		durata = 0;
+		annoUscita = 0;
+		vietatoMinori = false;
+		cmd = "";
+		risposta = "";
+		
+		menu = "Seleziona : \n1 - Schede complete dei singoli film\n"
+				+ "2 - Il titolo dei film antecedenti al 1992\n"
+				+ "2 - Il numero di film vietati ai minori\n"
+				+ "3 - Il titolo del film più lungo (o dei film)\n"
+				+ "4 - La durata media dei film di genere Azione\n"
+				+ "0 - Esci";
+		System.out.println(menu);
+		//C
+		do
+		{
+			System.out.println("Commando: \n");
+			cmd = input.nextLine();
+			switch(cmd)
+			{
+				case "1":
+					
+					break;
+				case "2":
+					
+					break;
+				case "3":
+					
+					break;
+				case "4":
+					
+					break;
+				case "0":
+					
+					break;
+				default:
+					risposta = "Commando Inesistente";
+			}
+			
+		}while (!cmd.equalsIgnoreCase("0"));
+		
+		//O
+	}
+
+}

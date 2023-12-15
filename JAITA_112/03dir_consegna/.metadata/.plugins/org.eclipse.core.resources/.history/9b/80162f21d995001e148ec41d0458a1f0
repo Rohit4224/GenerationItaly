@@ -1,0 +1,47 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main_1 {
+
+	public static void main(String[] args) {
+//		1- Scrivere un programma che, dato un numero limite da parte dell'utente,
+//		restituisca la serie di fibonacci fino all'indice indicato
+//		(Fibonacci: ogni numero è dato dal risultato della somma dei due precedenti
+//				ESEMPIO: L'utente dice 8, la serie sarà: 1, 1, 2, 3, 5, 8, 13, 21)
+
+		//D
+		java.util.Scanner input;
+		int limit;
+		int currNum;
+		int preNum;
+		int sumNum;
+		String risposta;
+		String rispostaNum;
+		
+		
+		//I
+		input = new java.util.Scanner(System.in);
+		limit = Integer.parseInt(input.nextLine());
+		currNum = 0;
+		preNum = 0;
+		sumNum = 0;
+		rispostaNum = "";
+		risposta = "Scrivi un numero limite per la serie di fibonacci: ";
+		System.out.println(risposta);
+		//C
+		while (limit > 0)
+		{
+			currNum = 1;
+			rispostaNum += currNum;
+			limit--;
+			if (limit != 0)
+				rispostaNum += ", ";
+		}
+		
+		
+		//O
+		System.out.println(rispostaNum);
+	}
+
+}

@@ -1,0 +1,34 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// D
+		String stazionePartenza;
+		String stazioneArrivo;
+		Scanner tastiera;
+		double prezzoBiglietto;
+		
+		// I
+		tastiera = new Scanner(System.in);
+		stazionePartenza = "Centrale Milano";
+		
+		System.out.println("In che stazione vuoi andare");
+		stazioneArrivo = tastiera.nextLine();
+		
+		tastiera.close();
+		
+		switch(stazioneArrivo.toLowerCase())
+		{
+			case "bergamo":
+			case "como":
+				prezzoBiglietto = 5.50;
+		}
+
+	}
+
+}

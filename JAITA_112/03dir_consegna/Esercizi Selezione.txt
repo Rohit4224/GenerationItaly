@@ -1,0 +1,29 @@
+
+ESERCIZI PER IL WEEKEND
+
+1) Scrivere un programma che, richieda i dati di un rettangolo(base e altezza) e di un quadrato. 
+	Stampare il perimetro e l'area del rettangolo e del quadrato.
+	Stampare poi quale delle due figure è quella con l'area maggiore.
+
+2) Scrivere un programma che, ricevuti in input tre numeri, stampi il più grande dei tre.
+
+3) Scrivere un programma che riceve in ingresso il capitale(soldi totali), il tasso di interesse annuo(percentuale
+	di cui inserirete solo il numero, ad esempio tasso del 5%, voi inserirete 5) e la durata dell’investimento, 
+	espressa in mesi(12 mesi sono 1 anno, 24 sono 2 anni e così via).
+	La media mensile consiste in: (capitale + (interesse annuo * anni)) / mesi totali
+	Stampare la media mensile.
+
+4) Come al punto 3, ma se l’utente inserisce un tempo negativo stampare che il tempo inserito non è valido
+
+5) Inserire il numero di adulti e di bambini che devono acquistare un biglietto. 
+	Gli adulti pagano 10 euro, i bambini 5. 
+	Ogni 10 bambini, un adulto è gratis. 
+	Sopra i 50 bambini, il biglietto viene rifiutato
+	(cioè viene stampato un messaggio di errore al posto del biglietto)
+
+6) Scrivere un programma che riceve in input i dati di una persona per determinare il
+	prezzo dell’ingresso in discoteca. 
+	Il biglietto a prezzo pieno costa 20 euro. 
+	Le donne hanno diritto a uno sconto di 10 euro. 
+	Gli under 20 hanno diritto a uno sconto ulteriore di 5.
+	Determinare il prezzo del biglietto in output.

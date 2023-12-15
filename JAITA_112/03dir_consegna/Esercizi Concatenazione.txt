@@ -1,0 +1,19 @@
+1) Scrivere un programma che prenda in ingresso 3 numeri:
+    Per ogni numero concatenare in una variabile:
+	 - se sono numeri pari "Il numero è pari"
+	 - se sono numeri dispari "Il numero è dispari"
+	 - se è maggiore di 5 "Il numero è maggiore di 5"
+	 - se è maggore di 25 salvare solo "Il numero è maggiore di 25" e non i valori precedenti
+	 - se è minore di zero "Il numero è negativo"
+	Stampare in console per ogni  numero la stringa ottenuta dai controlli sopra
+	
+2) Chiedere all'utente di inserire 5 nomi
+	Per ogni nome concatenare in una variabile:
+	 - se il nome è Uberto o Zenelao "Il tuo nome è raro"
+	 - se il nome è Estella o Frisella "Il tuo nome è esotico"
+	 - se il tuo nome è Mario salvare unicamente "Ti chiami come l'idrauilico più famoso al mondo"
+	 - se il nome finisce con la lettera a "Il tuo nome termina con 'A'"
+	 - se il nome termina con la lettera o "Il tuo nome termina con 'O'"
+	 - se il nome ha un numero di lettere superiore a 7 "Il tuo nome è lungo"
+	Stampare in console la variabile caricata dopo i controlli sopra
+	(Il comando .length() che vi dice il numero di caratteri di una stringa, il resto provate a cercarlo con amico Google)

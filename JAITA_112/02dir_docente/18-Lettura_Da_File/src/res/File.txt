@@ -1,0 +1,21 @@
+Vino
+Pinot Grigio
+13.5
+Birra
+Tennet's
+5.9
+Vino
+Marzemino
+13
+Liquore
+Limoncello
+25
+Birra
+Ichnusa
+4.5
+Vino
+Montepulciano
+14
+Birra
+Peroni
+4.5

@@ -1,0 +1,19 @@
+package main;
+
+public class Main_2 {
+
+	public static void main(String[] args) {
+//		2- Far inserire dei numeri all'utente finche la somma di essi non raggiunge il valore 27(quindi finchè somma < 27).
+//		Stampare in console la somma dei numeri inseriti e il numero di volte che l'utente ha 
+//		inserito un numero maggiore di 10.
+		
+		//
+		java.util.Scanner input;
+		int currNum;
+		int sumNum;
+		int countNumGreater10;
+		
+
+	}
+
+}
