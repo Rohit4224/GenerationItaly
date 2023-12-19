@@ -1,0 +1,8 @@
+7
+SET Albero di natale,1000,100,30,palline-luci,rosso-blu-oro
+SET Cuccia per cani,30,80,22,cuscino-copertina-ciotola,marrone-nero-rosa-multicolor
+SET Pigiami natalizi,200,200,22,camicia-pantaloni-calze-ciabatte,rosso-bianco-verde
+SET Divano,5,300,35,cuscini-copridivano-poggiapiedi,grigio-nero-verde-blu
+SET Attrezzi Cucina,55,250,25,coltelli-mestolo-scolapasta-forchette,argento-oro-ametista
+SET Giardinaggio,4,2500,30,motosega-tagliaerba-gnomo da giardino-irrigatori,arancione-verde-rosso
+SET Smart Working,12,2500,30,pc-mouse-tastiera-monitor-webcam,rgb-nero-oro

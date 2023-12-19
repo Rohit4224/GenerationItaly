@@ -1,0 +1,20 @@
+19
+Friends;Comedy;10;24
+Game of Thrones;Fantasy;8;10
+Breaking Bad;Thriller;5;13
+The Mandalorian;Action;3;8
+The Crown;Drama;6;10
+The Witcher;Adventure;2;8
+Black Mirror;Sci-Fi;5;3
+The Walking Dead;Thriller;11;16
+Stranger Things;Fantasy;4;8
+Sherlock;Mystery;4;3
+The Office (US);Comedy;9;22
+Fargo;Thriller;4;10
+Peaky Blinders;Drama;6;6
+Lost;Drama;6;18
+The Big Bang Theory;Comedy;12;24
+Brooklyn Nine-Nine;Comedy;8;22
+Dexter;Crime;8;12
+Westworld;Sci-Fi;3;10
+The X-Files;Sci-Fi;11;24
