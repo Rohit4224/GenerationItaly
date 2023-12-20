@@ -1,0 +1,6 @@
+5
+Pino;Pane;24-12-1989;Giangiorgio;Dimagrire;S
+Pino;Abete;30-11-2003;Giangiorgio;Definire;S
+Maria;Nazaret;10-03-1978;Pierino;Dimagrire;N
+Lucia;Travaglino;17-05-2001;Julio;Divertirsi;N
+Silvia;Silvietta;05-02-2009;Julio;Definire;S

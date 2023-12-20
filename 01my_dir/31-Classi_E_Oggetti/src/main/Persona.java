@@ -1,6 +1,6 @@
 package main;
 
-// Questa è una CLASSE, in particolare si chiama CLASSE MODELLO
+// Questa e' una CLASSE, in particolare si chiama CLASSE MODELLO
 public class Persona
 {
 	// Una classe si compone di due elementi diversi:
@@ -11,17 +11,17 @@ public class Persona
 	boolean patentato;
 	
 	// 						!!!!ATTENZIONE!!!
-	// 			MAI MAI MAI MAI MAI Inizializzare le proprietà in linea!!!
-	// Le proprietà si dichiarano e basta!
+	// 			MAI MAI MAI MAI MAI Inizializzare le proprietï¿½ in linea!!!
+	// Le proprieta' si dichiarano e basta!
 	// Esistono pochissime eccezioni a questa regola, e non le vedremo fino a dopo natale, quindi il primo
-	//  che becco a inizializzare le proprietà si vedrà vandalizzare il frigo.
+	// che becco a inizializzare le proprieta' si vedra' vandalizzare il frigo.
 	
-	// 2) METODO: è un algoritmo che dato un input calcola un output.
+	// 2) METODO: e' un algoritmo che dato un input calcola un output.
 	//  Ogni metodo si compone di una cosa chiamata FIRMA DEL METODO.
-	//  La firma del metodo è data dal nome (scheda) e dal contenuto delle parentesi tonde 
+	//  La firma del metodo ï¿½ data dal nome (scheda) e dal contenuto delle parentesi tonde 
 	//   (che siano piene o vuote come nel nostro caso poco importa).
-	//  Prima della firma del metodo dobbiamo sempre mettere il così detto TIPO DI RITORNO 
-	//   (sarà il tipo di dato che vogliamo dare in output)
+	//  Prima della firma del metodo dobbiamo sempre mettere il cosï¿½ detto TIPO DI RITORNO 
+	//   (sarï¿½ il tipo di dato che vogliamo dare in output)
 	String scheda()
 	{
 		// Le graffe nei metodi sono OBBLIGATORIE e indicano il CORPO DEL METODO
@@ -33,7 +33,7 @@ public class Persona
 				"\n---------------------------------------------\n"		;
 		
 		
-		// RETURN è la parola chiave che spedisce all'esterno di un metodo il valore della variabile
+		// RETURN ï¿½ la parola chiave che spedisce all'esterno di un metodo il valore della variabile
 		//  o del calcolo che gli scriviamo accanto
 		// Se ho un tipo di ritorno, devo per forza avere un return
 		return ris;
