@@ -1,0 +1,92 @@
+									RIPASSO TEST PRE-NATALE
+
+1) Cose'è una variabile?
+		E' una scatola, che occupa una determinata cella di memoria, che è caratterizzata da un tipo e un nome.
+
+2) Cosa vuol dire l'acronimo DICO?
+		Dichiarazione, Inizializzazione, Calcolo, Output
+
+3) Definizione di vettore
+		E' una variabile che contiene elementi ordinati dello stesso tipo di dimensione fissa.
+		
+4) Quanti e quali sono i principi della programmazione classica?
+		Sono 3 e sono Sequenza, Selezione e Iterazione
+
+5) Quali strumenti compongono la Selezione? Descrivili brevemente
+		La selezione si compone di 3 famiglie: IF, SWITCH e TERNARIO.
+		IF
+			Si compone di IF PIATTI, IF-ELSE e ELSE-IF
+			Tutti questi sottogruppi hanno il compito di porre un o più condizioni al codice.
+			Gli IF PIATTI verranno sempre eseguiti tutti in ordine di scerittura, gli IF-ELSE eseguiranno le istruzioni 
+			al loro interno escludendo mano a mano insiemi di dati, così come ELSE-IF
+			ESEMPIO:
+				IF PIATTI
+					if(condizione1)
+					{
+						blocco di codice
+					}
+					if(condizione2)
+					{
+						blocco di codice
+					}
+				IF-ELSE
+					if(condizione)
+					{
+						blocco di codice
+					} 
+					else 
+					{
+						blocco di codice
+					}
+				ELSE-IF
+					if(condizione1)
+					{
+						blocco di codice
+					} 
+					else if(condizione2)
+						 {
+							blocco di codice
+						 }
+		SWITCH
+			Si compone di casisitiche a cui paragoniamo una singola variabile.
+			Ogni casistica si chiama CASE ed è solitamente associata a un BREAK.
+			Ogni CASE è come se fosse un blocco di codice a se stante.
+			E' possibile inserire un blocco di codice legato al DEFAULT, che comprende le casistiche non esplorate nei CASE precedenti.
+			ESEMPIO
+				switch(variabile)
+				{
+					case valoreDaConfrontare1 :
+						istruzioni varie;
+						break;
+					case valoreDaConfrontare2 :
+						istruzioni varie;
+						break;
+					default :
+						istruzioni varie;
+				}
+		TERNARIO
+			E' un modo di scrivere una situazione di IF-ELSE compressa.
+			Ha una sintassi in cui siamo obbligati a dare delle istruzioni sia in caso di vero che di falso.
+			ESEMPIO
+				variabile = condizione ? istruzioni_da_fare_nel_vero : istruzioni_da_fare_nel_falso;
+
+6) Definizione di classe
+		Una classe si compone di due elementi: PROPRIETA', che sono delle carattestiche 'universali' e METODI che sono invece 
+		gli algoritmi di calcolo della classe stessa.
+
+7) Definizione di Costruttore
+		E' un metodo che ha il compito di costruire oggetti, tramite la valorizzazione delle proprietà stesse.
+		
+8) Definizione di firma del metodo
+		La firma del metodo è composta dal nome e dal tipo e dall'ordine dei sui parametri.
+
+9) String[] pizze = {"Margherita","Diavola","Capricciosa"};
+		Di che tipo è pizze? Vettore
+		Di che tipo è pizze[i]? String
+		Di che tipo è pizze[i].length? int
+		
+10) Persona[] persone = .....
+		Di che tipo è persone? Vettore
+		Di che tipo è persone[i]?  Persona
+		Di che tipo è persone[i].nome?  String
+		Di che tipo è persone[i].nome.length? int
