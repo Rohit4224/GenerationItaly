@@ -1,0 +1,11 @@
+10
+It;King;Horror;Mondadori;1560;1989;S
+Cujo;King;Horror;Feltrinelli;600;2000;N
+Misery;King;Horror;Feltrinelli;550;1999;N
+Il gioco di Gerald;King;Horror;Feltrinelli;600;2001;S
+Addicted;Roveresi;Thriller;Mondadori;450;2019;N
+Tre giorni di Buio;Trentalance;Thriller;Hoepli;650;2022;S
+Il suggeritore;Carrisi;Thriller;Mondadori;450;2019;N
+Lo scudo di Talos;Manfredi;Romanzo;Hoepli;450;2005;N
+Io sono Dio;Faletti;Romanzo;Mondadori;800;2000;N
+Eragon;Paolini;Fantasy;Mondadori;900;2005;N

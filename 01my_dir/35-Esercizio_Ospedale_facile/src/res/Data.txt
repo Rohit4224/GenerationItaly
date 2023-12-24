@@ -1,0 +1,5 @@
+P004, Luca, Ferrari, 03/04/1992, Torino, Ipertensione, Cardiologia, false, 4
+P005, Sofia, Romano, 18/09/1988, Napoli, Influenza, Medicina Generale, true, 3
+P006, Giovanni, Esposito, 25/06/1970, Bari, Artrite, Reumatologia, false, 5
+P007, Chiara, Russo, 12/12/1985, Palermo, Asma, Pneumologia, true, 6
+P008, Andrea, Conti, 08/07/2000, Genova, Appendicite, Chirurgia Generale, false, 2

@@ -7,9 +7,9 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/rohit/Desktop/Corsi_Generation/JAITA_112/01my_dir"/>
 			<item value="/home/rohit/Desktop/Corsi_Generation/JAITA_112/01my_dir/31-Classi_E_Oggetti"/>
 			<item value="/home/rohit/Desktop/Corsi_Generation/JAITA_112/02dir_docente/29-Ripasso_Bonus_Progetto26"/>
-			<item value="/home/rohit/Desktop/Corsi_Generation/JAITA_112/01my_dir"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
