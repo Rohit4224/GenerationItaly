@@ -1,0 +1,6 @@
+5
+Marco, Rossi, 15/03/1985, Milano, Ingegnere, 2, 1200
+Sara, Conti, 28/06/1990, Roma, Avvocato, 0, 6300
+Luca, Ferri, 10/12/1978, Firenze, Insegnante, 3, 3500
+Giulia, Neri, 05/09/1978, Napoli, Medico, 1, 8000
+Alessio, Gentile, 20/04/1995, Torino, Programmatore, 0, 5000

@@ -1,0 +1,30 @@
+							COMPITI VACANZE
+
+1) In un file dati scrivere i dettagli anagrafici di un gruppo di persone
+	nome, cognome, dob, residenza (città), professione, figliACarico, stipendio
+
+	Scrivere la classe modello Persona con le proprietà, il costruttore, ei metodi: 
+		scheda(), 
+		int eta(), 
+		boolean sbarcare() -> sottrae 100 euro per ogni figlio a carico dallo stipendio.
+							Per vivere a Milano si pagano al mese 900 euro, 
+							per vivere a Roma se ne pagano 850, 
+							per vivere in altre città se ne pagano 550. 
+							Il metodo torna true se lo stipendio rimanente è superiore al 30% dello stipendio mensile
+
+	Scrivere una classe aggregatrice che legga il file dei dati, salvi tutto in un vettore di oggetti e poi
+		- String listaCompleta()
+		- String poveracci() -> Tutti coloro che non riescono a sbarcare
+		- String nababbo() -> Tutti coloro che prendo lo stipendio più alto
+		- String cercaPer(String professione)
+		- String sostituisci(String residenzaAbbandonata, String nuovaResidenza) -> cambierete tutte le residenze uguali a residenzaAbbandanata con il valore di nuovaResidenza
+	
+	Scrivere una classe di avvio in cui testare i metodi
+	
+2) Scrivere nella classe main un programma che sia in grado di dire all'utente se la parola che ha inserito è palindroma 
+	(cioè se si legge nello stesso modo sia da destra a sinistra che da sinistra a destra
+		ESEMPIO:
+			anna -> palindroma
+			osso -> palindroma
+			mamma -> non palindroma
+	)
