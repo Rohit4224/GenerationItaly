@@ -1,0 +1,4 @@
+Alice,Bensanelli,26,Milano
+Pino,Pane,35,Milano
+Topo,Gigio,14,Brescia
+Tizio,Caio,35,Como
