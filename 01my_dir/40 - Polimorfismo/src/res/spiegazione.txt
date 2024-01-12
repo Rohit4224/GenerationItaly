@@ -1,0 +1,45 @@
+			POLIMORFISMO
+
+Il polimorfismo e l'ultimo dei principi della programmazione a oggetti.
+
+Cosa significa polimorfismo?
+	Significa "tante forme" dello stesso oggetto.
+	
+In pratica questo principio ci permettera di unificare oggetti di tipi diversi sotto la stessa tipologia.
+Questo principio si puo mettere in atto grazie al principio dell'ereditaieta.
+
+I due tipi diversi avranno sempre un antenato (padre) in comune da qualche parte nel loro "albero genealogico"
+
+	ESEMPIO
+	Se Medico e Paziente sono entrambe figlie di Persona, grazie al polimorfismo io potro inserire nello stesso insieme
+	(tipicamente AL) entrambi gli oggetti di queste due classi perche entrambi a un certo punto possono essere ricondotte
+	alla stessa tipologia (cioe a Persona)
+
+Grazie al polimorfismo io posso aumentare in maneria passiva la mia sicurezza, perche nascondendo i tipi sotto i loro padri,
+faccio vedere molte meno informazioni di quelle che effetivamente stanno girando.
+
+Nella pratica per camuffare i tipi si lavora su due elementi nel momento di dichiarazione e inizializzazione degli oggetti.
+
+		Tipo Formale    Tipo Concreto
+			|				|
+		 Persona p = new Persona("Pino,"Pane","Milano",25);
+		 
+ Situazione del polimorfismo: Il tipo formale non combacia con il tipo concreto, ma e un suo avo.
+ 
+ 		Persona m = new Medico("Pino","Pane","Milano",25,"Chirurgo CardioToracico","San Raffaele");
+ 		Persona n = new Paziente("Pino","Pane","Milano",25,"Leucemia",S,451,S);
+ 		
+ Il vero vantaggio e che java ragiona per tipi formali, quindi per quanto riguarda il programma,
+ l'oggetto p,m,n sono tutti dello stesso tipo e possono essere inseriti tutti nello stesso AL tipo:
+ 
+ 	ArrayList<Persona> persone = new ArrayList<Persona>();
+ 	
+ 	persone.add(p);
+ 	persone.add(m);
+ 	persone.add(n);
+ 	
+Per controllare che tipo di oggetto concreto abbiamo per le mani, si fa una cosa chiamata CASTING.
+Il casting si compone di due passaggi: 
+	1) Cerca di vedere il tipo concreto dell'oggetto che ho tra le mani,
+	2) Trasfroma temporaneamente il tipo formale in quello concreto permettendoci di chiamarare metodi/proprieta
+		del tipo concreto senza avere eccezioni

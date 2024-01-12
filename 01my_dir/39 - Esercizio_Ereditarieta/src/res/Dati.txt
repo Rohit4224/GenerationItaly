@@ -1,0 +1,8 @@
+Tram,Linea 2,6,25,15,false,true
+Metro,Linea B,7,40,55,false,true
+Autobus,Linea 12,35,15,true,false
+Tram,Linea 3,4,28,18,true,false
+Autobus,Linea 8,30,25,true,true
+Tram,Linea 1,5,30,20,true,true
+Metro,Linea A,8,50,60,true,false
+Autobus,Linea 25,40,20,true,true

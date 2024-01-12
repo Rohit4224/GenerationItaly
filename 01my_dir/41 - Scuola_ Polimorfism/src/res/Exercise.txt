@@ -1,0 +1,69 @@
+Refactorise the exercise in POLIMORFISM
+
+Creare la classe Persona che avrà come proprietà:
+		String nome, String dob;
+	e i metodi:
+		String toString();
+		int eta();
+
+Creare la classe Studente, figlia di Persona, che avrà come proprietà:
+		int classe;
+		String sezione;
+		double[] voti; (italiano[0],matematica[1],storia[2])
+	e i metodi:
+		String toString();
+		int nInsuff() -> Conta il numero di insufficienze dallo studente
+		String esito() -> Stampa promosso se la media complessiva è maggiore di 6 
+							e c'è al massimo 1 insufficienza
+		boolean erasmus() -> Ritorna true se lo studente: è in 4° o 5°, 
+						è promosso e ha una media complessiva di almeno 8
+	
+Creare la classe Insegnante, figlia di Persona, che avrà le proprietà:
+		String materiaInsegnata;
+		double stipendioBase;
+	e i metodi:
+		String toString();
+		double stipendio() -> Calcolato partendo da stipendioBase, a cui aggiungo:
+					- 300 se l'età è tra i 30 e i 40 anni
+					- 500 se l'età è tra i 40 compresi e i 50
+					- 800 se l'età è tra i 50 compresi e i 60
+					- 1000 se l'età è 60 o più, a cui aggiungo 50 per ogni 
+						anno che manca alla pensione
+	
+		int anniPensione() -> Ritorna quanti anni mancano alla pensione(Fissata a 70 anni)
+	
+Creare un file che contiene sia insegnanti che studenti, mescolati tra di loro
+	Esempio file:
+		studente,nome,dob,classe,sezione,mediaIta, mediaMate, mediaSto
+		insegnante,nome,dob,materiaInsegnata,stipendioBase;
+	
+Creare una classe aggregatrice Scuola in cui vengono letti i dati da file in due AL. 
+Scrivere poi i metodi:
+		- String listaCompleta() -> lista completa insegnanti e studenti
+		- String listaDocenti()  -> lista dei soli insegnanti
+		- String listaStudenti() -> lista dei soli studenti
+		- String listaPromossi() -> lista degli studenti promossi 
+							e il numero degli studenti bocciati
+		- int nErasmus() -> numero degli studenti 
+						che possono andare in erasmus(ricordate i metodi già scritti!)
+		- String pensionamento() -> lista di insegnanti prossimi alla pensione
+									(entro a 5 anni dalla pensione)
+		- double totaleStipendiIta() -> totale stipendio degli insegnanti di italiano
+		- double mediaStipendi() -> media degli stipendi di tutti gli insegnanti
+		- double mediaStipendiMate() -> media degli stipendi degli insegnanti di matematica
+		
+		PRO VERSION
+		- String studenteBravo() -> nome e media dello studente con la media maggiore
+		- String insegnanteVecchio() -> nome ed età dell'insegnante più vecchio
+		- String insegnanteRicco() -> nome, materia e stipendio dell'insegnante più pagato
+		- String studenteGiovane() -> nome, età e classe(2A) dello studente più giovane
+		
+		BONUS
+		- String fuoriCorso() -> Ritorna il nome e gli anni fuori corso degli studenti, 
+									tenendo presente che
+								per essere in corso le combinazioni dovrebbero essere:  
+								CLASSE -> ANNI => 5->19-18, 4->18-17, 3->17-16, 2->16-15, 1->15,14
+		- String studentiPerAula() -> Per ogni aula (ES 4C) voglio vedere 
+							il nome dell'aula e il numero di studenti presenti
+	
+Creare una classe Main dove testare i metodi di Scuola tramite un menù

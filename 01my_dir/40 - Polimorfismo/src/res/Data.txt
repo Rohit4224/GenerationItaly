@@ -1,0 +1,6 @@
+pe,Pino,Pane,Milano,25-09-1987
+pa,Lorenzo,D'onofrio,Milano,04-09-1999,Apprendicite,N,2
+me,Giorgio,Panza,Milano,27-10-1968,Chirurgia Addominale,Fatebene Fratelli,2500
+me,Anna,Tataranni,Brescia,13-06-1975,Medicina Generale,Fatebene Fratelli,1900
+pa,Lucia,Piano,Bergamo,18-11-1945,Pneumotorace,N,10
+pa,Julia,Kilo,Bergamo,19-07-1988,Raffreddore,S,1

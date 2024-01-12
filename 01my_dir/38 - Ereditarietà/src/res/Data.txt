@@ -1,0 +1,5 @@
+a,Fiat,500,Bianco,S,N,60,12.5
+a,Abart,595,Rosso,S,S,65,10.4
+m,Kawasaki,Ninja,Verde,25,18.9,S,N
+a,Fiat,Panda,Giallo,N,N,62,9.5
+m,Ducati,Monster,Rosso,23,15.9,N,N

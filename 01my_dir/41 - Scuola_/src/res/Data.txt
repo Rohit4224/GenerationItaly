@@ -1,0 +1,7 @@
+studente;Helen Turner;13-02-2010;5;B;9.0;8.5;9.2
+insegnante;Anna Brown;12-07-1980;Italiano;2000.0
+studente;Bob Smith;22-08-2005;1;B;8.2;7.8;8.5
+insegnante;David Carter;25-01-1968;Storia;2500.0
+studente;Fiona White;17-03-2002;2;C;8.0;7.5;8.5
+insegnante;Emma Johnson;22-02-1988;Matematica;1800.0
+insegnante;Harry Harris;30-08-1965;Matematica;2200.0

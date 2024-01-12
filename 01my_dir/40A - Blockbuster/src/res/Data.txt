@@ -1,0 +1,7 @@
+serietv,La Casa de Papel,50,5,10,true
+film,Inception,148,Christopher Nolan,true
+serietv,Stranger Things,45,4,8,false
+film,The Shawshank Redemption,142,Frank Darabont,false
+serietv,Breaking Bad,47,5,13,true
+film,The Dark Knight,152,Christopher Nolan,true
+film,Batman,150,Christopher Nolan,true

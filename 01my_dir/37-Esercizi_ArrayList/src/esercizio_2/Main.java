@@ -118,11 +118,11 @@ public class Main
 		/*
 		 			CONSEGNA
 		 	1) Scrivere un programma che chieda all'utente di inserire dei numeri: quando l'uente scrive 0, 
-		 		stampare in console: la somma dei pari, la lista dei multipli di 7, il numero più presente scritto
+		 		stampare in console: la somma dei pari, la lista dei multipli di 7, il numero piï¿½ presente scritto
 		 		(usate gli arraylist!!)
-		 	2) Leggere da un file una serie di nomi, salvarli in un AL e poi: stampare il nome più lungo,
-		 		il nome con più vocali presenti, cancellare tutti i nomi che iniziano per G 
-		 	3) Riempire un AL con numeri generati casualmente tra 1 e 10 compresi finchè la loro somma non supera 40,
+		 	2) Leggere da un file una serie di nomi, salvarli in un AL e poi: stampare il nome piï¿½ lungo,
+		 		il nome con piï¿½ vocali presenti, cancellare tutti i nomi che iniziano per G 
+		 	3) Riempire un AL con numeri generati casualmente tra 1 e 10 compresi finchï¿½ la loro somma non supera 40,
 		 		poi stampare: elenco dei numeri, il numero dei pari, il numero dei dispari, cancellare i numeri 
 		 		multipli di 3, modificare tutti i numeri 9 con il numero 0
 		 */
@@ -165,7 +165,7 @@ public class Main
 		//System.out.println(nomi);
 		
 		// C
-		//stampare il nome più lungo
+		//stampare il nome piï¿½ lungo
 //		int max = 0;
 //		String nomeMax = "";
 //		
@@ -179,7 +179,7 @@ public class Main
 //				nomeMax += ", " + s;
 		String nomeMax = nomiMax(nomi);
 		
- 		//il nome con più vocali presenti
+ 		//il nome con piï¿½ vocali presenti
 		String nomeVocaliMax = nomiVocaliMax(nomi);
 		
 		//cancellare tutti i nomi che iniziano per G 
@@ -187,8 +187,8 @@ public class Main
 		String nomiDopoCancellazione = nomiDopoCancellazione(nomi);
 		
 		// O
-		System.out.println("\nNomi più lunghi: " + nomeMax);
-		System.out.println("\nNomi con più vocali: " + nomeVocaliMax);
+		System.out.println("\nNomi piï¿½ lunghi: " + nomeMax);
+		System.out.println("\nNomi con piï¿½ vocali: " + nomeVocaliMax);
 		System.out.println("\nNomi Originali: " + nomiCompletiOriginali + "\nNomi Senza G: " + nomiDopoCancellazione);
 		
 	}
