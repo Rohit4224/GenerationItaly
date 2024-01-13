@@ -273,4 +273,67 @@ public class Scuola
 		}
 		return (name + " e' piu giovane, eta " + min + " anni. Studia in classe " + classe);
 	}
-}
+	
+//	String fuoriCorso() -> Ritorna il nome e gli anni fuori corso degli studenti, 
+//	tenendo presente che
+//per essere in corso le combinazioni dovrebbero essere:  
+//CLASSE -> ANNI => 5->19-18, 4->18-17, 3->17-16, 2->16-15, 1->15,14
+
+	public String fuoriCorso()
+	{
+	    String res = "";
+
+	    for (Persona p : persone)
+	    {
+	        if (p instanceof Studente)
+	        {
+	            Studente s = (Studente) p;
+	                    
+	            if (s.eta() > (14 + s.classe))
+	            	res += s.getName() + " : " + (s.eta() - (14 + s.classe)) + " anni fuori corso\n";
+
+	        }//if(p...
+	    }//for
+	    return res.isEmpty() ? "Nessun fuori corso trovato." : res;
+	}
+	
+//	- String studentiPerAula() -> Per ogni aula (ES 4C) voglio vedere 
+//	il nome dell'aula e il numero di studenti presenti
+	
+	public String studentiPerAula()
+	{
+		ArrayList<String> aule = new ArrayList<>();
+		int i = 0;
+		int student = 0;
+		int j = 0;
+		String res = "";
+		
+		for (Persona p : persone)
+		{
+			if (p instanceof Studente)
+			{
+				Studente s = (Studente)p;
+				if(!aule.contains(s.classe + s.getSezione()))
+				{
+					aule.add(s.classe + s.getSezione());
+					i = 0;
+					student = 0;
+					while(i < persone.size())
+					{
+						if(persone.get(i) instanceof Studente)
+						{
+							Studente s2 = (Studente)persone.get(i);
+							if ((s2.classe + s2.getSezione()).equalsIgnoreCase(s.classe + s.getSezione()))
+								student++;
+						}
+						i++;
+					}//while
+					res += "Aula: " + aule.get(j++) + " Studenti: " + student + "\n";
+				}//if(!aule...
+			}//if(p...
+			 
+		}//for
+		return (res);
+	}
+	
+}//end class scuola

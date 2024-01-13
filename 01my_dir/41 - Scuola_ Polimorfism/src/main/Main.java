@@ -105,6 +105,12 @@ public class Main {
 				case "13":
 					res = "Nome, età e classe(2A) dello studente più giovane: \n" + o.studenteGiovane();
 					break;
+				case "14":
+					res = "Il nome e gli anni fuori corso degli studenti: \n" + o.fuoriCorso();
+					break;
+				case "15":
+					res = "Per ogni aula, il nome dell'aula e il numero di studenti presenti: \n" + o.studentiPerAula();
+					break;
 				case "M":
 					res = menu;
 					break;
