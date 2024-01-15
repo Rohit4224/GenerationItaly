@@ -145,4 +145,7 @@
 		<item key="DIALOG_HEIGHT" value="694"/>
 		<item key="DIALOG_FONT_NAME" value="1|Sans|9.0|0|GTK|1|"/>
 	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item key="GenerateJavadoc" value="false"/>
+	</section>
 </section>

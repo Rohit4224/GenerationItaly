@@ -1,0 +1,85 @@
+						POLIMORFISMO
+						
+Il polimorfismo è l'ultimo dei principi della programmazione a oggetti.
+
+Cosa significa polimorfismo?
+	Significa "tante forme" dello stesso oggetto.
+	
+In pratica questo principio ci permetterà di unificare oggetti di tipi diversi sotto la stessa tipologia.
+Questo principio si può mettere in atto grazie al principio dell'ereditarietà.
+
+I due tipi diversi avranno sempre un antenato(padre) in comune da qualche parte nel loro "albero genealogico"
+
+ESEMPIO
+ Se Medico e Paziente sono entrambe figlie di Persona, grazie al polimorfismo io potrò inserire nello stesso insieme
+ (tipicamente AL) entrambi gli oggetti di queste due classi perchè entrambi a un certo punto possono essere ricondotte
+ alla stessa tipologia, cioè a Persona.
+ 
+Grazie al polimorfismo io posso aumentare in maniera passiva la mia sicurezza, perchè nascondendo i tipi sotto i loro padri,
+faccio vedere molte meno informazioni di quelle che effettivamente stanno girando.
+
+Nella pratica per camuffare i tipi si lavora su due elementi nel momento di dichiarazione e inizializzazione degli oggetti.
+
+  Situazione classica: Il tipo formale combacia con il tipo concreto.
+  
+ 		  Tipo Formale     Tipo Concreto
+ 			   |               |
+ 			Persona p = new Persona("Pino","Pane","Milano",25);
+ 			
+  Situazione del polimorfismo: Il tipo formale non combacia con il tipo concreto, ma DEVE ESSERE un suo avo.
+  	
+ 			Persona m = new Medico("Pino","Pane","Milano",25,"Chirugo CardioToracico","San Raffaele");
+ 			Persona n = new Paziente("Pino","Pane","Milano",25,"Leucemia",S,451,S);
+ 			
+ Il vero vantaggio è che Java ragiona per tipi formali, quindi per quanto riguarda il programma, 
+ l'oggetto p,m,n sono tutti dello stesso tipo e possono essere inseriti tutti nello stesso AL tipo:
+ 
+ 	ArrayList<Persona> persone = new ArrayList<Pesona>();
+ 	
+ 	persone.add(p);
+ 	persone.add(m);
+ 	persone.add(n);
+ 	
+ 	
+Per controllare che tipo di oggetto concreto abbiamo per le mani, si fa una cosa chiamata CASTING.
+Il casting si compone di due passaggi: 
+	1) Cerca di vedere il tipo concreto dell'oggetto che ho tra le mani
+	2) Trasforma temporanemaente il tipo formale in quello concreto permettendoci di chiamare metodi/proprietà 
+		del tipo concreto senza avere eccezioni
+ 	
+
+Il polimorfismo si divide in 2 categorie: 
+	- polimorfismo degli oggetti (ed è quanto spiegato sopra)
+	- polimorfismo dei metodi: si divide in POLIMORFISMO ORIZZONTALE(o overload) e POLIMORFISMO VERTICALE(o override)
+	
+	OVERLOAD
+		"stessa classe, stesso nome ma firma diversa"
+		Consiste nell'avere nella stessa classe diversi metodi che avranno lo stesso nome ma a cui
+		cambieranno i parametri(cambiano per ordine, per tipo o per numero)
+		Un esempio classico è il costruttore delle classi
+		(ESEMPIO Nella classe Medico abbiamo
+		
+			public String cerca(String nominativo) 
+				che fa OVERLOAD di 
+			public String cerca(int stipendio)
+		)
+		
+	OVERRIDE
+ 		"classi diverse ma stessa firma del metodo"
+ 		Le classi diverse devono essere imparentata.
+ 		Consiste nell'avere delle classi imparentate tra loro che avranno dei metodi con le stessa identica firma
+ 		ma i cui corpi potranno differire.
+ 		Solitamente nei casi di Override troviamo una notazione (@Override) che è facoltativa, ma serve ad avvisare
+ 		Java che quel metodo fa riferimento a un metodo della classe padre.
+ 		Un esempio classico è il metodo toString()
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 			 

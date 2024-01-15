@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Scanner"/>
+		<item key="selection" value="titoloLungo"/>
 		<list key="findhistory">
+			<item value="titoloLungo"/>
 			<item value="Scanner"/>
 			<item value="max"/>
 			<item value="maax"/>

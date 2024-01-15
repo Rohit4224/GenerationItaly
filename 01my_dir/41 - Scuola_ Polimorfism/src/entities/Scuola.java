@@ -42,6 +42,8 @@ public class Scuola
 				case "insegnante":
 					p = (new Insegnante(info[1], info[2], info[3], 
 												Double.parseDouble(info[4])));
+				default :
+					System.out.println("Errore in file");
 			}
 			if (p != null)
 				persone.add(p);
