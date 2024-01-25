@@ -1,0 +1,5 @@
+d;1;Pino;Pane;24-09-1978;Milano;Docente;1430;Milano;10
+d;2;Chiara;Alba;29-01-1980;Lodi;docente;1350;Milano;5
+d;3;Plinio;Vecchio;31-04-1079;Lodi;Bidello;1200;Milano;15
+s;4;Laura;kilo;25-11-2009;Milano;galileo Galilei;1C;9-8.5-9-10
+s;5;Giulio;Soppo;19-10-2008;Lodi;Galilio Galilei;1C;6-6.5-7-6

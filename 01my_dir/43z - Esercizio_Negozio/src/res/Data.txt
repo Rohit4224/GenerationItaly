@@ -1,0 +1,18 @@
+t;TV001;Samsung;2020;55.5;SmartVision;true
+t;TV002;Sony;2019;65.0;UltraView;false
+t;TV003;LG;2021;43.0;EcoSmart;true
+t;TV004;Panasonic;2018;50.0;CineView;false
+t;TV005;Toshiba;2022;60.0;MegaScreen;true
+t;TV006;Philips;2017;32.0;BasicView;false
+p;PC001;Dell;2020;Inspiron;8;Intel Core i5;512;SSD
+p;PC002;HP;2019;Pavilion;16;AMD Ryzen 7;1000;HDD
+p;PC003;Lenovo;2021;IdeaCentre;12;Intel Core i7;256;SSD
+p;PC004;Acer;2018;Aspire;4;Intel Pentium;500;HDD
+p;PC005;Asus;2022;ROG Strix;32;AMD Ryzen 9;2000;SSD
+p;PC006;Apple;2017;iMac;16;Intel Core i9;1000;Fusion Drive
+l;Laptop001;HP;2020;Envy;16;Intel Core i7;512;SSD
+l;Laptop002;Dell;2019;XPS;32;AMD Ryzen 9;1000;HDD
+l;Laptop003;Lenovo;2021;ThinkPad;8;Intel Core i5;256;SSD
+l;Laptop004;Asus;2018;ZenBook;12;Intel Core i3;500;HDD
+l;Laptop005;Acer;2022;Predator;64;AMD Ryzen 7;2000;SSD
+l;Laptop006;Apple;2017;MacBook Pro;16;Intel Core i9;1000;SSD

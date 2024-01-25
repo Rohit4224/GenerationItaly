@@ -1,0 +1,35 @@
+CONSEGNA
+
+Creare una classe Entity con proprietà int id.
+
+Creare una astratta classe Articolo, figlia di Entity, con le proprietà:
+		String marca, int annoProduzione
+	e i metodi
+		int eta() -> Ritorna da quanti anni è in giro l'articolo
+		abstract double prezzo();
+		
+Creare la classe Pc, figlia di Articolo, con le proprietà:
+		String modello, int ram, String cpu, int hd, String tipoHd
+	e i metodi:
+		double prezzo() ---> Ritorna il prezzo del pc(usate i calcoli che volete voi, usate però tutte le proprietà)
+		boolean gaming() --> Ritorna true se il la cpu è i7 e il tipoHd è HHD
+		
+Creare la classe Laptop, figlia di Pc, che avrà le stesse proprietà e metodi di Pc
+
+Creare la classe Televisore, figlia di Articolo, con le proprietà:
+		double pollici, String modello, boolean smartTv
+	e i metodi:
+		double prezzo()
+		
+Creare un interfaccia INegozio che abbia i metodi:
+	String elenco() -----------------> scheda di tutti gli articoli
+	String elencoLaptop() -----------> scheda dei soli laptop
+	ArrayList<Entity> maxPrezzo() ---> Ritorna un array con l'articolo più costoso per tutte le categorie
+	double prezzoMedio(String tipo) -> Ritorna il prezzo medio della tipologia di articoli passata come parametro
+	ArrayList<Pc> gaming() ----------> Ritorna un AL contente solo i Pc da gaming
+	
+Creare una classe aggregatore Negozio che legga i dati da file e salvi in un unico AL.
+	String prezzoMassimo() --> la scheda dell'articolo che costa di più
+	String prezzoMinimo() ---> la scheda dell'articolo che costa di meno 
+	
+Creare un Main in cui testare i metodi
