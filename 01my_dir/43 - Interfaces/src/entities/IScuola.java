@@ -16,6 +16,8 @@ import java.util.ArrayList;
  * L'accordo tra le due parti si regge su questi presupposti: L'interfaccia fornisce alla classe protezione.
  * e la classe fornisce all'interfaccia l'implementazione dei suoi metodi.
  */
+
+// it can extend another interface
 public interface IScuola
 {
 	/*IMPORTANTE
@@ -32,9 +34,13 @@ public interface IScuola
 	// le versioni precedenti alla 1.8 permettevano alle interfaccie di possedere
 	//     unicamente le firme dei metodi
 	
-	public String elenco();
-	public String elecoDipendentiPendolari();
-	public ArrayList<Entity> getPersone();
+	
+	// int age = 24   // final and static
+	// interface doesnt have its own memory thats why it cannot save properties in stack memory
+	
+	public abstract String elenco();
+	String elecoDipendentiPendolari();  // by default public and abstract
+	ArrayList<Entity> getPersone();
 	
 	// Dalla versione 1.8 in poi, è stata implementata la possibilità di dare un corpo ai metodi
 	// e se scriviamo corpo in interfaccia ci vuole "DEFAULT"
@@ -73,7 +79,6 @@ public interface IScuola
 	}
 
 	// nelle versioni più recenti è stata introdotta la possibilità di avere delle proprietà STATICHE
-	
 	
 
 }

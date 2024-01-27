@@ -1,0 +1,10 @@
+1,Il Padrino,Drammatico,175
+2,Inception,Sci-Fi,148
+3,La La Land,Musical,128
+4,Forrest Gump,Drammatico,142
+5,Interstellar,Sci-Fi,169
+6,La vita è bella,Commedia,116
+7,Il Signore degli Anelli: La Compagnia dell'Anello,Fantasy,178
+8,Schindler's List,Drammatico,195
+9,Pulp Fiction,Thriller,154
+10,The Dark Knight,Azione,152
