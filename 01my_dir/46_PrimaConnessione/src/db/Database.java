@@ -18,7 +18,7 @@ public class Database implements IDatabase
     public Database(String nomeDB)
     {
     	// ricordate di importare il JAR 
-    	setC(nomeDB);
+    	setPath(nomeDB);
     }
     
     public Connection getC()
@@ -26,7 +26,7 @@ public class Database implements IDatabase
     	return c;
     }
     
-    public void setC(String nomeDB)
+    public void setPath(String nomeDB)
     {
     	this.path = path + nomeDB + "?" + fusoOrario;
     }

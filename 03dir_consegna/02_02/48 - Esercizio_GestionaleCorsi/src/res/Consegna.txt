@@ -1,0 +1,29 @@
+ CONSEGNA 2.2 da consegnare entro le 18.00 di oggi
+
+Dovete creare un gestionale per una piattaforma di formazione professionale.
+
+Come dati avrete
+	Corsi -> id, nome, totale_ore, numero_lezioni, lingua, materiali(si o no)
+	Utenti -> id, nome, cognome, dob, azienda(mi basta il nome), mansione, corsoFrequentato
+	
+Che relazione c'è tra le due tabelle, sapendo che per regolamento gli utenti possono scegliere solo un corso?
+
+Scrivere lo script SQL e il codice Java per creare il CRUD dei vari oggetti.
+Voglio vedere il corso dentro all'utente.
+
+La console dovrà permettere di fare le seguenti richieste/azioni:
+	- leggere tutti i corsi disponibili
+	- inserire nuovi corsi
+	- modificare un corso
+	- cancellare un corso
+	- leggere tutti gli utenti disponibili
+	- modificare un utente
+	- inserire un nuovo utente
+	- cancellare un utente
+	- il numero di utenti per ogni corso disponibile
+	- il corso che dura di più
+	- dato il nome di un corso, voglio vedere i nominativi di chi lo segue
+	- le lingue disponibili per i vari corsi
+	- i corsi con dei materiali 
+	- dato un monteore fissato a 30 ore totali, voglio vedere i nomi di chi non rientra nel monteore
+	- per ogni azienda, voglio vedere il numero di utenti presenti, il numero di utenti che seguono dei corsi e il numero di utenti che non seguono corsi

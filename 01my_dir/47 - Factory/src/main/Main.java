@@ -25,6 +25,8 @@ public class Main {
 		
 		// --------------------------------------------------------
 		
+		
+		
 		DAOAllevatore a = new DAOAllevatore("fattoria");
 		
 		System.out.println(a.list());

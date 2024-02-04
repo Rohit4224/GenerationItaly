@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="titoloLungo"/>
 		<list key="findhistory">
+			<item value="fillObj"/>
 			<item value="titoloLungo"/>
 			<item value="Scanner"/>
 			<item value="max"/>
