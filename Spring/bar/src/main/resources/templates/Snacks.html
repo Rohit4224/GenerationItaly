@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/snack.js" ></script>
+</head>
+<body>
+    <h2>Lista Snacks</h2>
+    <img src="imgs/MIT_Universe_mobile.webp" alt="" width="200px">
+
+    <hr>
+
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Prezzo</td>
+            <td>Quantita</td>
+            <td>Salato</td>
+            <td>Dattaglio</td>
+            <td>ELIMINA</td>
+        </tr>
+        <tr th:each="snack : ${snacks}">
+            <td th:text = "${snack.nome}" ></td>
+            <td th:text = ${snack.prezzo}></td>
+            <td th:text = ${snack.quantita}></td>
+            <td th:text = ${snack.salato}></td>
+            <td><a th:href="|/dettaglioSnack?id=${snack.id}|">Details</a></td>
+            <!-- <td><a th:href="|/dettaglioBevanda/${bevanda.id}|">Details</a></td> --> <!-- meno soncigliato -->
+            <td><a th:href="|/eliminaSnack?id=${snack.id}|">ELIMINA</a></td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Inserisci una snack</h1>
+    
+    <form action="/inserisciSnack" method="post">
+        
+        <label for="nome">Nome Snack</label>
+        <input type="text" name="nome" placeholder="Nome Snack">
+        <br>
+        <label for="prezzo">Prezzo</label>
+        <input type="text" name="prezzo" placeholder="Prezzo">
+
+        <label for="quantita">Quantita</label>
+        <input type="text" name="quantita" placeholder="Quantita">
+
+        <!-- <label for="salato">Salato</label>
+        <input type="checkbox" name="salato"> -->
+        <br>
+        <label for="salato">Salato</label>
+        <input type="radio" name="salato" value="si" id="salato_si">
+        <label for="salato_si">Si</label>
+        <input type="radio" name="salato" value="no" id="salato_no">
+        <label for="salato_no">No</label>
+
+        <br>
+        <input type="submit" value="CREA SNACK">
+
+    </form>
+
+    <h1>Modifica una snack</h1>
+    <select id="snackSelection" onchange="onSelectionchange()">
+        <option th:id = "|sn_${snack.id}|" 
+                th:value = "|sn_${snack.id}|" 
+                th:each="snack : ${snacks}" 
+                th:text = "|${snack.id} - ${snack.nome}|" 
+                th:id-snack="${snack.id}" 
+                th:nome-snack = "${snack.nome}" 
+                th:prezzo-snack="${snack.prezzo}"
+                th:quantita-snack="${snack.quantita}"
+                th:salato-snack="${snack.salato}">
+            
+            </option>
+    </select>
+    
+    <form action="/modificaSnack" method="post">
+        <input id="inputIdSnack" type="hidden" name="id">
+        <label for="nome">Nome Snack</label>
+        <input id="inputNomeSnack" type="text" name="nome" placeholder="Nome Snack">
+        <br>
+        <label for="prezzo">Prezzo</label>
+        <input id="inputPrezzoSnack" type="text" name="prezzo" placeholder="Prezzo">
+        <br>
+        <label for="quantita">Quantita</label>
+        <input id="inputQuantitaSnack" type="text" name="quantita" placeholder="Quantita">
+
+        <br>
+        <label for="salato">Salato</label>
+        <input type="radio" name="salato" value="si" id="salato_si_modifica">
+        <label for="salato_si_modifica">Si</label>
+        <input type="radio" name="salato" value="no" id="salato_no_modifica">
+        <label for="salato_no_modifica">No</label>
+
+        <input type="submit" value="Modifica SNACK">
+
+    </form>
+
+</body>
+</html>
