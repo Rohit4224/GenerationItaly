@@ -4,6 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Database implements IDatabase
 {
 
@@ -18,7 +22,8 @@ public class Database implements IDatabase
 	private Connection connection;
 
 
-    public Database (String nomeDb)
+    /* public Database (String nomeDb) */
+	public Database (@Value("${database.name}") String nomeDb)
     {
         try
     	{

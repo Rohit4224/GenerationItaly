@@ -8,12 +8,14 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Component;
 
 import com.generation.bar.db.Database;
 import com.generation.bar.entities.Bevanda;
 import com.generation.bar.entities.Entity;
 import com.generation.bar.entities.Snack;
 
+@Component
 public class BevandaDAO implements IDAO
 {
 

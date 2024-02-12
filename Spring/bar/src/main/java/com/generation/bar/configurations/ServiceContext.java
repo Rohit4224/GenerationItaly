@@ -1,4 +1,4 @@
-package com.generation.bar.configurations;
+/* package com.generation.bar.configurations;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,4 +20,4 @@ public class ServiceContext
     {
         return new SnackService();
     }
-}
+} */

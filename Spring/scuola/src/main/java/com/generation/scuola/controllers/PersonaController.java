@@ -11,7 +11,34 @@ import jakarta.servlet.http.HttpSession;
 @Controller
 public class PersonaController {
     
+
+
     @GetMapping("/areaStudenti")
+    public String areaStudenti(HttpSession session){
+        if(session.getAttribute("LOGIN") != null){
+            if(session.getAttribute("LOGIN").toString().equals("OK")){
+                if(session.getAttribute("RUOLO").toString().equals("STUDENTE")){
+                    return "areaStudente.html";
+                }
+            }
+        }
+
+        return "redirect:/loginPage";
+    }
+
+    @GetMapping("/areaDocenti")
+    public String areaDocenti(HttpSession session){
+        if(session.getAttribute("LOGIN") != null){
+            if(session.getAttribute("LOGIN").toString().equals("OK")){
+                if(session.getAttribute("RUOLO").toString().equals("DOCENTE")){
+                    return "areaDocente.html";
+                }
+            }
+        }
+
+        return "redirect:/loginPage";
+    }
+    /* @GetMapping("/areaStudenti")
     public String areaStudenti(){
         return "areaStudente.html";
     }
@@ -19,7 +46,7 @@ public class PersonaController {
     @GetMapping("/areaDocenti")
     public String areaDocenti(){
         return "areaDocente.html";
-    }
+    } */
 
     @GetMapping("/areaDirigenti")
     public String areaDirigenti(HttpSession session, Model model){
