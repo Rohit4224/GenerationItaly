@@ -1,0 +1,88 @@
+<!-- Scrivere una pagina web che permetta la conversione di diverse monete.
+<br>
+Dovete permettere all'utente di scegliere, tramite un menù a tendina, la moneta di partenza.
+Accanto l'utente deve poter inserire l'importo.
+<br>
+Inoltre voglio esista un tasto "converti" che permette di vedere in output l'importo originale convertito in euro.
+<br>
+<br>
+Per chi finisce presto, provate a fare lo stesso lavoro ma anche le monete convertitie devono poter scegliere l'unità di misura
+<br>
+<br> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://imgs.search.brave.com/94BlZ8rlB7oPGgQNHC4L7rivtbHIRyaHOzQ7pzh2viU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/dXRkc3RjLmNvbS9p/Y29uL2ZkMy80YTkv/ZmQzNGE5NzJlZTgz/YjM0MWIyM2U0ODMy/Mzg4NDVjZWU4ZmZj/OTc1YjY0MzMyYzRh/NzljZTIyMmYyM2Qy/NjFiOQ">
+    <title>Currency Converter</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <form id="conversionForm">
+            <label for="fromCurrency">From:</label>
+            <select id="fromCurrency" name="fromCurrency"></select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="toCurrency">To:</label>
+            <select id="toCurrency" name="toCurrency"></select>
+
+            <button type="button" onclick="convertCurrency()">Convert</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="icon" href="https://imgs.search.brave.com/94BlZ8rlB7oPGgQNHC4L7rivtbHIRyaHOzQ7pzh2viU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/dXRkc3RjLmNvbS9p/Y29uL2ZkMy80YTkv/ZmQzNGE5NzJlZTgz/YjM0MWIyM2U0ODMy/Mzg4NDVjZWU4ZmZj/OTc1YjY0MzMyYzRh/NzljZTIyMmYyM2Qy/NjFiOQ">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="body">
+        <div>
+            <p>Price Converter</p>
+        </div>
+    
+        <div>
+            <select name="currency" id="right-conversion">
+                <option value="0">Euro</option>
+                <option value="">Dollaro</option>
+            </select>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <select name="" id="left-conversion">
+                <option value="1">Euro</option>
+                <option value="">Dollaro</option>
+            </select>
+            <input type="text">
+        </div>
+    </div>
+    
+
+
+    <script src="index.js" ></script>
+</body>
+</html> --> 
