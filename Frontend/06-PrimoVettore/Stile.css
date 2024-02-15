@@ -1,0 +1,66 @@
+body
+{
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table
+{
+    height: 100px;
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+th
+{
+    text-align: center;
+    font-size: 40px;
+    color: aqua;
+}
+
+input[type=button]
+{
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border: solid 2px red;
+    color: green;
+    font-weight: bold;
+}
+
+input[type=number], input[type=text]
+{
+    border-radius: 10px;
+    width: 250px;
+    color: red;
+    text-align: center;
+    border: solid 1px white;
+    font-weight: bold;
+}
+
+h2
+{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Pacifico, cursive;
+    color: peru;
+}
+
+p
+{
+    margin: 40px auto;
+    min-height: 30px;
+    width: 400px;
+    border: dashed 2px wheat;
+    padding: 10px;
+    color: chartreuse;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}

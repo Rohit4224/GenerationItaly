@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dettagli docente</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+    <body>
+        <div>
+            <h1 style="color: lightblue;">Docente <span th:text="|${docente.nome} ${docente.cognome}|"></span></h1>
+            <div class="tableContainer">
+                <h2>lista delle classi del docente</h2>
+
+                <table class="listTable">
+                    <tr>
+                        <td>Sezione</td>
+                    </tr>
+                    <tr th:each="classe, iter : ${listaClassi}">
+                        <td th:text="${classe.sezione}"></td>
+                        <td><button><a th:href="|/dettagliclasse/${classe.id}|">Docenti e Studenti della classe</a></button></td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="tableContainer">
+                <h2>Sposta docente</h2>
+                Aggiungi classe al docente:
+                <br>
+                <form action="/docente-aggiungi-classe" method="post">
+                    <input type="hidden" name="idDocente" th:value="${docente.id}">
+                    <select name="idClasse" id="selezioneClasse">
+                        <option th:each="classe, iter : ${allListaClassi}" th:value="${classe.id}"><span th:text="${classe.sezione}"></span></option>
+                    </select>
+                    <input type="submit" value="Aggiungi classe">
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+
+    </script>
+</html>

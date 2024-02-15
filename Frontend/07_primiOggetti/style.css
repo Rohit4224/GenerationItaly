@@ -1,0 +1,195 @@
+/* body {
+    //background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenitore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(5, 68, 77);
+}
+
+#testata {
+    text-align: center;
+    padding: 20px;
+    background-color: #041d362d;
+    margin-bottom: 20px;
+}
+
+#contenitore {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+.viaggio {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.viaggio h3,
+.viaggio h4 {
+    margin: 0;
+}
+
+.viaggio .immagineSingola img {
+    width: 100%;
+    height: auto;
+}
+
+.viaggio .descrizione,
+.viaggio .altreinfo {
+    margin: 10px 0;
+}
+
+.viaggio button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.viaggio button:hover {
+    background-color: #c82333;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+#testata {
+    text-align: center;
+    padding: 20px;
+    background-color: #16213e;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#contenitore {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #0f3460;
+    color: #e0e0e0;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #16213e;
+    color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #1a1a2e;
+}
+
+.viaggio {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #0f3460;
+    border-radius: 10px;
+    background-color: #16213e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viaggio h3,
+.viaggio h4 {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.viaggio .immagineSingola img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.viaggio .descrizione,
+.viaggio .altreinfo {
+    margin: 10px 0;
+}
+
+.viaggio button {
+    padding: 10px 20px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.viaggio button:hover {
+    background-color: #9a1750;
+}

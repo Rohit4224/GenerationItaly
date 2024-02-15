@@ -1,0 +1,28 @@
+body{
+    background-color: darkslategrey;
+}
+
+.tableContainer{
+    background-color: rgb(182, 182, 182);
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.listTable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableContainer tr:first-child{
+    font-weight: bold;
+    font-size: 20pt;
+    border: solid thin;
+}
+
+.tableContainer tr{
+    border: solid thin;
+    text-align: center;
+}
+
+

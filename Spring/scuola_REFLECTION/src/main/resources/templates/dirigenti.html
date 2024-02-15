@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dirigente</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <h1 style="color: lightblue;">Dirigente: <span th:text="|${dirigente.nome} ${dirigente.cognome}|"></span></h1>
+        <div class="tableContainer">
+            <h2>Lista Classi della scuola</h2>
+            <!-- <p>La scuola ha in totale n. <span th:text="${listaClassi.size}"></span></p> -->
+            <table class="listTable">
+                <tr>
+                    <td>Sezione</td>
+                    <td>Azione</td>
+                </tr>
+                <tr th:each="classe, iter : ${listaClassi}">
+                    <td th:text="${classe.sezione}"></td>
+                    <td><button><a th:href="|/dettagliclasse/${classe.id}|">Docenti e Studenti della classe</a></button></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="tableContainer">
+            <h2>Lista docenti della scuola</h2>
+            <table class="listTable">
+                <tr>
+                    <td>Nome</td>
+                    <td>Cognome</td>
+                    <td>Data di nascita</td>
+                </tr>
+                <tr th:each="docente, iter : ${listaDocenti}">
+                    <td th:text="${docente.nome}"></td>
+                    <td th:text="${docente.cognome}"></td>
+                    <td th:text="${docente.dataNascita}"></td>
+                    <td><button><a th:href="|/dettagliDocente/${docente.id}|">Classi del docente</a></button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

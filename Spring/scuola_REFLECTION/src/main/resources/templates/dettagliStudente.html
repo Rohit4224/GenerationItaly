@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dettagli studente</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+    <body>
+        <div>
+            <h1 style="color: lightblue;">Studente <span th:text="|${studente.nome} ${studente.cognome}|"></span></h1>
+            <div class="tableContainer">
+                <h2>lista dei voti dello studente</h2>
+
+                <table class="listTable">
+                    <tr>
+                        <td>Materia</td>
+                        <td>Voto</td>
+                    </tr>
+                    <tr th:each="materia, iter : ${listaMaterie}">
+                        <td th:text="${materia.nome}"></td>
+                        <td th:text="${materia.voto}"></td>
+                    </tr>
+                </table>
+                <h3>Media totale dei voti: <span th:text="${mediaTotaleVoti}" th:style="${mediaTotaleVoti < 6.0}? 'color: red;' : 'color: green;'"></span></h3>
+            </div>
+        </div>
+    </body>
+</html>

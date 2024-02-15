@@ -1,0 +1,105 @@
+<!-- /* CONSEGNA 
+        Creare una sito WEB in cui presenterete una serie di "schede" legate all'ambito collezione 
+        di figurine.
+        Le richieste minime sono:
+        
+un form per insierire nuove figurine
+l'elenco delle figurine presenti (nome come intestazione, un immagine, qualche altro dato)
+la possibilità di cancellare le figurine che non vogliamo più
+
+        BONUS
+        
+la possibilità di modificare una figurina già esistente */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel's Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://imgs.search.brave.com/ix6e2QK-CVWabQMvVuc92SsYwreS1Q9l36edDXj8BoU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzQ5MTE3/My9zY3JlZW5zaG90/cy8xNDI2MzE1L21l/ZGlhLzEyOGJiYzU4/MjkyMjRmY2ViYTBk/MzMyMmY3ZTUwYTU4/LmpwZz9yZXNpemU9/NDAweDMwMCZ2ZXJ0/aWNhbD1jZW50ZXI">
+</head>
+<body>
+    <!-- parte alta del sito -->
+    <div id = "testata">
+        <h1>Marvel's Characters</h1>
+        <h3>Share the sketch of your favourite marvel's character and win an Iron suit.!</h3>
+    </div>
+
+    <!-- del form di inserimento -->
+    <div id = "contenitore">
+        <form action="" id="formInserimento">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        Details of Marvel Character
+                    </th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" id="characterName" placeholder="e.g., Iron Man">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alias</td>
+                    <td>
+                        <input type="text" id="alias" placeholder="e.g., Tony Stark">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Superpower</td>
+                    <td>
+                        <input type="text" id="superpower" placeholder="e.g., Flight, Super Strength">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alignment</td>
+                    <td>
+                        <select id="alignment">
+                            <option value="hero">Hero</option>
+                            <option value="villain">Villain</option>
+                            <option value="anti-hero">Anti-Hero</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td>
+                        <input type="url" id="characterImage" placeholder="URL to character image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>
+                        <textarea id="characterDescription" cols="30" rows="10" placeholder="Brief description of the character"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Reset" onclick="clearCharacterFields()">
+                    </td>
+                    <td>
+                        <input type="button" value="Salva" onclick="addMarvelCharacter()">
+                    </td>
+                </tr>
+
+            </table>
+ 
+    </div>
+
+    <!-- graficare i characters gia salvati -->
+    <div id="characterContainer">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        displayMarvelCharacters()
+    </script>
+</body>
+</html>

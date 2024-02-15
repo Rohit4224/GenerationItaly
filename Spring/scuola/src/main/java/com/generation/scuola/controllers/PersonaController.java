@@ -59,18 +59,8 @@ public class PersonaController {
                     
                     return "areaDirigente.html";
                 }
-
-
-
-
             }
         }
-
-
         return "redirect:/loginPage";
-
-        
     }
-
-
 }

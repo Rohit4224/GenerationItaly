@@ -1,0 +1,35 @@
+Scrivere backend e frontend del portale di una scuola, il portale dovrà comprendere le seguenti entità
+- Entity
+- Persona
+- Studente
+- Docente
+- Dirigente
+- Classe
+
+(Persona estende Entity, Studente, Docente, Dirigente estendono Persona, Classe estende direttamente Entity, Entity e Persona sono astratte)
+
+(Basatevi sul db su quali proprietà mettere sulle classi modello)
+
+il portale dovrà comprendere:
+- Pagina di login
+- Area personale - studenti
+- Area personale - docenti
+- Area personale - dirigenti
+
+a seconda della persona che fa l'accesso (sia essa studente, docente o dirigente) la rispettiva area personale dovrà dare la possibilità di visualizzare ed eseguire cose differenti:
+
+Area dirigenti:
+- Mostrare la lista dei docenti nella scuola, per ogni docente si potrà vedere la lista delle classi in cui insegna
+- Mostrare la lista delle classi della scuola, Per ogni classe si potranno visualizzare la lista dei docenti che insegnano in quella classe e gli studenti che ne fanno parte
+- Possibilità di spostare un docente da una classe in un'altra classe
+
+Area Docenti
+- Mostrare la lista delle classi in cui il docente loggato insegna, per ogni classe mostrare la lista degli studenti che ne fanno parte
+- [EXTRA] mostrare per ogni studente la media dei propri voti
+
+Area Studenti
+- [EXTRA] Mostrare la lista dei voti dello studente loggato
+
+
+
+POTETE COPIARE DAL PROGETTO BANCA LA CLASSE Database, IDAO e se serve qualcosa dai DAO

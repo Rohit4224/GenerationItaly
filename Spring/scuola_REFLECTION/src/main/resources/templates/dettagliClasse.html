@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title th:text="|Classe ${classe.sezione}|"></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+    <body>
+        <div>
+            <h1 style="color: lightblue;">Classe <span th:text="${classe.sezione}"></span></h1>
+            <div class="tableContainer">
+                <h2>lista degli studenti</h2>
+
+                <table class="listTable">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Cognome</td>
+                        <td>Data di nascita</td>
+                    </tr>
+                    <tr th:each="studente, iter : ${listaStudenti}">
+                        <td th:text="${studente.nome}"></td>
+                        <td th:text="${studente.cognome}"></td>
+                        <td th:text="${studente.dataNascita}"></td>
+                        <td><button><a th:href="|/dettagliStudente/${studente.id}|">Carriera studente</a></button></td>
+                    </tr>
+                </table>
+
+            </div>
+            <hr>
+            <div class="tableContainer">
+                <h2>lista dei docenti</h2>
+                <table class="listTable">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Cognome</td>
+                        <td>Data di nascita</td>
+                    </tr>
+                    <tr th:each="docente, iter : ${listaDocenti}">
+                        <td th:text="${docente.nome}"></td>
+                        <td th:text="${docente.cognome}"></td>
+                        <td th:text="${docente.dataNascita}"></td>
+                        <!-- <td><button><a th:href="|/dettagliclasse/${classe.id}|"></a>Docenti e Studenti della classe</button></td> -->
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </body>
+</html>

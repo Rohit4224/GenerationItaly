@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vettori</title>
+    <script src="Logica.js"></script>
+    <link rel="Stylesheet" type="text/css" href="Stile.css">
+</head>
+<body>
+    <!-- Questo DIV si occupa solo dell'inserimento dati-->
+    <div>
+        <table>
+            <tr>
+                <th colspan="3">
+                    Inserisci un numero
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="numero">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="aggiungi()">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="rimuovi()">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- QUesto DIV si occupa solo di graficare i dati dell'intero vettore-->
+    <div>
+        <h2>Dati Nel Vettore</h2>
+        <p id="outputVettore">Qui graficheremo tutto il contenuto del vettore</p>
+    </div>
+
+    <div>
+        <h2>Somma Totale</h2>
+        <p id="outputSomma">Qui graficheremo la somma di tutte le cifre presenti nel vettore</p>
+    </div>
+
+    <div>
+        <h2>Media Totale</h2>
+        <p id="outputMedia">Qui graficheremo la media di tutte le cifre presenti nel vettore</p>
+    </div>
+
+    <div>
+        <h2>Numero Maggiore</h2>
+        <p id="outputMaggiore">Qui graficheremo il numero maggiore di tutte le cifre presenti nel vettore</p>
+    </div>
+
+    <!-- ----------------------------------------------- -->
+    <hr color="white">
+
+    <div>
+        <table>
+            <tr>
+                <th colspan="3">
+                    Inserisci un numero o parola
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="numero&text">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="aggiungi_1()">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="rimuovi_1()">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Dati Nel Vettore</h2>
+        <p id="outputVettore_1">Contenuto ordinato del vettore</p>
+    </div>
+
+    <div>
+        <h2>Somma Totale</h2>
+        <p id="outputSomma_1">Somma degli eventuali inseriemnti numerici</p>
+    </div>
+
+    <div>
+        <h2>Maggior numero di caratteri</h2>
+        <p id="maggior_caratteri">L'eventuale parola con il maggior numero di caratteri</p>
+    </div>
+
+    <div>
+        <h2>Conteggio</h2>
+        <p id="outputMaggiore">Il conteggio di valori testuali e numerici</p>
+    </div>
+
+
+
+
+    <!-- <div>
+        <h2>ESERCIZIO</h2>
+        <p>
+            Voglio vedere un secondo blocco di inserimento dati accanto al primo. <br>
+            Questa volta i dati saranno misti, sia parole che numeri saranno accettati nel vettore. <br>
+            Da parte vostra, voglio vedere: 
+            <ul>
+                <li>Contenuto ordinato del vettore</li>
+                <li>Somma degli eventuali inseriemnti numerici</li>
+                <li>L'eventuale parola con il maggior numero di caratteri</li>
+                <li>Il conteggio di valori testuali e numerici</li>
+            </ul>
+        </p>
+    </div> -->
+</body>
+<!-- Si attiva solo al caricamento della pagina (primo accesso o al click della rotellina di refresh)-->
+<script>
+    grafica();
+</script>
+</html>
