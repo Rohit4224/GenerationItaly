@@ -41,6 +41,7 @@ function displayMarvelCharacters() {
                             </p>
                         </div>
                         <button onclick="marvelCharacters.splice(${i}, 1); displayMarvelCharacters()">Remove</button>
+                        <button onclick="window.location.href='update.html?index=${i}'">Update</button>
                     </div>`;
     }
 
@@ -92,3 +93,68 @@ function control(characterName, alias, superpower, alignment, characterImage, ch
 
     return true;
 }
+
+
+var urlParams = new URLSearchParams(window.location.search);
+var index = urlParams.get('index');
+
+var character = marvelCharacters[index];
+
+document.getElementById('characterName').value = character.characterName;
+document.getElementById('alias').value = character.alias;
+document.getElementById('characterImage').value = character.characterImage;
+document.getElementById('characterDescription').value = character.characterDescription;
+document.getElementById('superpower').value = character.superpower;
+document.getElementById('alignment').value = character.alignment;
+
+
+document.getElementById('updateForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var characterName = document.getElementById('characterName').value;
+    var alias = document.getElementById('alias').value;
+    var characterImage = document.getElementById('characterImage').value;
+    var characterDescription = document.getElementById('characterDescription').value;
+    var superpower = document.getElementById('superpower').value;
+    var alignment = document.getElementById('alignment').value;
+
+    var character = marvelCharacters[index];
+    character.characterName = characterName;
+    character.alias = alias;
+    character.characterImage = characterImage;
+    character.characterDescription = characterDescription;
+    character.superpower = superpower;
+    character.alignment = alignment;
+});
+
+
+document.getElementById('updateForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var characterName = document.getElementById('characterName').value;
+    var alias = document.getElementById('alias').value;
+    var characterImage = document.getElementById('characterImage').value;
+    var characterDescription = document.getElementById('characterDescription').value;
+    var superpower = document.getElementById('superpower').value;
+    var alignment = document.getElementById('alignment').value;
+
+    // Here you would update the character information in your data
+    // For example:
+    // var character = marvelCharacters.find(c => c.characterName === characterName);
+    // character.alias = alias;
+    // character.characterImage = characterImage;
+    // character.characterDescription = characterDescription;
+    // character.superpower = superpower;
+    // character.alignment = alignment;
+
+    var character = marvelCharacters[index];
+    character.characterName = characterName;
+    character.alias = alias;
+    character.characterImage = characterImage;
+    character.characterDescription = characterDescription;
+    character.superpower = superpower;
+    character.alignment = alignment;
+
+    // Redirect to the home page
+    window.location.href = 'index.html';
+});
