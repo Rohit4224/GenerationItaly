@@ -90,3 +90,30 @@
 		Di che tipo è persone[i]?  Persona
 		Di che tipo è persone[i].nome?  String
 		Di che tipo è persone[i].nome.length? int
+		
+		
+		
+A astratta
+|			|
+B concreta  	 D astratta
+			|
+		C concreta
+
+//con chiavi String e valore Integer
+Map<String, Integer> map = new HashMap<>();
+map.put("chiave1", 1); // aggiungo valore chiave, assumo che ci sono anche altri chiavi e uso for-each loop avanti
+
+// metto le chiavi in liste
+List<String> chiavi = new ArrayList<>(map.keySet());
+
+//uso ciclo for-each per interare ogni chiave
+for (String chiave : chiavi)
+{
+System.out.println("Chiave: " + chiave);
+}
+
+
+
+
+
+
