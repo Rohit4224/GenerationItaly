@@ -1,0 +1,39 @@
+
+AGILE :
+
+approcio agile, è un mindset. logica incrementale, 4 valori, 12 principi, e delle pratiche o frameworks
+perchè nasce - per felicitare il mondo del lavoro
+
+- iterative and incremental approach
+
+- approach to software development and project management that prioritizes flexibility, collaboration, and customer satisfaction. 
+
+- The Agile methodology aims to deliver small, functional increments of a project frequently, allowing for rapid adaptation to changing requirements.
+
+- Iterative Development: Agile projects are broken down into small increments or iterations, typically lasting 2-4 weeks (Sprints).
+
+Popular Agile frameworks include Scrum, Kanban, and Extreme Programming (XP). Each of these frameworks provides specific practices and roles within the Agile principles.
+
+- framework refers to a pre-established structure or set of guidelines that provides a foundation for developing software applications, building projects, or organizing tasks. 
+
+-------------------------------------------------------------------------------------------------------------------------
+ 
+KANBAN   -  Kanban is a visual management method for improving work processes.
+		The key aspect of Kanban is visualizing the work, limiting work in progress, and continuously improving the flow.
+
+- In Kanban, a "post-it" typically refers to a sticky note sed on a physical Kanban board to represent a task or work item.
+		in post-it si mette anche il percentuale di avanzamento, quanto lavoro sia fatto.
+		
+	TO DO COLUMN: This is where new tasks are initially placed. Each task is written on a post-it and stuck in the "To Do" column, indicating that it's ready to be worked on.
+
+	IN PROGRESS COLUMN: As a team member starts working on a task, the corresponding post-it is moved to the "In Progress" column. This visually signals that the task is actively being worked on.
+
+	DONE COLUMN: Once a task is completed, its post-it is moved to the "Done" column. This column represents tasks that have been finished and are ready for review or deployment.
+	
+In Kanban:
+1.) Visualization (typically consists of columns representing different stages of the workflow, such as "To Do," "In Progress," and "Done.")
+2.) Work in Progress (WIP) Limits
+3.) Pull System
+4.) Continuous Improvement
+5.) Flexibility
+6.) Collaboration
