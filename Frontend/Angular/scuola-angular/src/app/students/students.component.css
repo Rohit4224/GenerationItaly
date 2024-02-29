@@ -1,0 +1,7 @@
+
+.studes.container{
+    display: flex;
+    gap: 3rem;
+    width: 80vw;
+    margin: auto;
+}

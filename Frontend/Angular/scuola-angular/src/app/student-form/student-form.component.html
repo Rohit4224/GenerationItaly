@@ -1,0 +1,15 @@
+
+<div class="form">
+    <h2>Aggiungi Studente</h2>
+    <!-- ricordarsi di importare su
+    app.module nella sezione import il 'FormsModule' -->
+    <input placeholder="Nome" type="text" [(ngModel)]="name">
+    <input placeholder="Classe" type="number" [(ngModel)]="classRoom">
+    <input placeholder="Voto Italiano" type="number" [(ngModel)]="ita">
+    <input placeholder="Voto Matematica" type="number" [(ngModel)]="mate">
+    <input placeholder="Voto Inglese" type="number" [(ngModel)]="ing">
+    <input placeholder="Voto Informatica" type="number" [(ngModel)]="info">
+    <button (click)="aggiungiStudente()">Aggiungi</button>
+    
+
+</div>

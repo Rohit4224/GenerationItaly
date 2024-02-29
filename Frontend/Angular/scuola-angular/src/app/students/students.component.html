@@ -1,0 +1,6 @@
+<div class="students-container">
+<app-student-form (studentAdd)="onAddStudent($event)"></app-student-form>
+<!-- Abbiamo passato i dati tramite 
+property binding -->
+<app-student-list [studentList]="students"></app-student-list>
+</div>

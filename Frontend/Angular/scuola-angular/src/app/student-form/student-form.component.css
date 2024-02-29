@@ -1,0 +1,7 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    /* il 'gap' e lo spazio
+    tra gli elementi */
+    gap: 0.5rem;
+}

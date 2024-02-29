@@ -1,0 +1,16 @@
+
+<!-- Possiamo sfruttare [ngClass] per 
+associare la classe .css 'completo'
+utilizzando il booleano 'completato'
+ dei nostri todo -->
+
+<div *ngFor="let t of list" [ngClass]="{completo: t.completato}">
+    <p>{{t.id}}</p>
+    
+    <p>{{t.completato}}</p>
+
+    {{t.descrizione}} <button (click)="cancella(t.id)">X</button>
+
+    <button (click)="toggle(t.id)">T</button>
+    
+</div>
