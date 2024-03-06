@@ -37,3 +37,9 @@ In Kanban:
 4.) Continuous Improvement
 5.) Flexibility
 6.) Collaboration
+
+
+
+
+
+Project Backlog : include Theme, Epic, Story, Task 
