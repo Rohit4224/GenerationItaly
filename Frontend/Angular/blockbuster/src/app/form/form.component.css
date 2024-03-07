@@ -1,0 +1,14 @@
+
+
+/* 
+    15)DIAMO UNA SISTEMA AL .CSS
+    PER VISUALIZZARE I DATI IN MANIERA
+    ORDINATA
+*/
+.form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20rem;
+}

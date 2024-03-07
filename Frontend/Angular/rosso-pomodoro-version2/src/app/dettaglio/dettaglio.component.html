@@ -1,0 +1,29 @@
+
+
+<div *ngIf="ricettaNelDettaglio, else noDettaglio">
+
+    <p>
+        {{ricettaNelDettaglio.nome}}
+    </p>
+
+    <p>
+        {{ricettaNelDettaglio.categoria}}
+    </p>
+
+    <p>
+        {{ricettaNelDettaglio.descrizione}}
+    </p>
+
+    <img class="immagine"  [src]="ricettaNelDettaglio.immagine" [alt]="ricettaNelDettaglio">
+</div>
+
+<!-- ng-template è un tag speciale in angular
+con il quale posso definire una parte di
+template che non è visibile di default.
+Gli assegno un nome tramite il simbolo '#'
+con cui lo posso richiamare -->
+<ng-template #noDettaglio>
+    <p>
+        Seleziona una ricetta per visualizzare il dettaglio
+    </p>
+</ng-template>

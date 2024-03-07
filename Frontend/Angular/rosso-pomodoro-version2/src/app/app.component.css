@@ -1,0 +1,9 @@
+
+.row {
+    display: flex;
+    gap: 2rem;
+}
+
+.lista{
+    flex: 2;
+}

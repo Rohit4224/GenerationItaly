@@ -1,0 +1,42 @@
+
+<!-- 
+    7)RENDERIZIAMO LA LISTA DEI FILM
+    UTILIZZANDO UNA DIRETTIVA 'ngfor'
+    PER VISUALIZZARE I FILM
+ -->
+<div>
+    <h2>Lista dei film</h2>
+    <div *ngFor="let f of films">
+        <p>{{ f.titolo | titlecase }}</p>
+        <p>Genere: {{ f.genere | uppercase}}</p>
+        <!-- 
+            9)INSERIAMO IL METODO 'getAnnoUscita'
+            NELL'INTERPOLAZIONE 'dataUscita'
+            PER VISUALIZZARE SOLO L'ANNO    
+         -->
+        <p>Anno di uscita {{ getAnnoUscita(f.dataUscita) }}</p>
+        <!-- 
+            28)COLLEGHIAMO IL METODO AL 
+            BOTTONE
+         -->
+         <!-- 
+            29.1) RICORDIAMOCI DI PASSARE
+            IL FILM CHE STA VENENDO ITERATO,
+            SUL METODO
+          -->
+          <button (click)="onClickDettaglio(f)">Dettaglio</button>
+          <!-- 
+            34)AGGIUNGIAMO UN BOTTONE 'elimina'
+            E COLLEGHIAMOGLI IL METODO 'onClickElimina'
+            PASSANDOGLI UN ID.
+           -->
+          <button (click)="onClickElimina(f.id)">Elimina</button>
+          <!-- 
+            36)COLLEGhIAMO AL BOTTONE IL METODO
+            PER MODIFICARE UN FILM, PASSANDOGLI
+            COME PARAMETRO IL film STESSO(f) 
+           -->
+          <button (click)="onClickModifica(f)">Modifica</button>
+        </div>
+</div>
+ 

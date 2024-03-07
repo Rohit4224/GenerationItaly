@@ -1,0 +1,16 @@
+
+<!-- 
+    23)SE ESISTE 'dettaglio' ALLORA
+    VENGONO VISUALIZZATI I DATI 
+    RELATIVI AL FILM (grazie 
+    all' *ngIf')
+ -->
+<div *ngIf="dettaglio">
+    <h2>Dettaglio del film</h2>
+    <p>Titolo: {{ dettaglio.titolo}}</p>
+    <img [src]="dettaglio.immagineCopertina">
+    <p>Data di uscita: {{ dettaglio.dataUscita}}</p>
+    <p>Durata: {{ dettaglio.durata }}</p>
+    <p *ngIf="dettaglio?.vietatoAiMinoriDi18">Vietato ai minori di 18</p>
+    <p>Voto: {{ dettaglio.voto }}/10</p>
+</div>

@@ -1,0 +1,35 @@
+
+
+<!-- 
+    14)IMPOSTIAMO IL TEMPLATE, PER POTER 
+    COLLEGARE GLI INPUT TRAMITE IL
+    'two-way binding', E DIAMOGLI
+    AL div UNA class PER POTERLO 
+    MODIFICARE, E DARGLI UN PO' DI 
+    STILE
+ -->
+<div class="form">
+
+    <input placeholder="Titolo" [(ngModel)]="titolo">
+    <input placeholder="Genere" [(ngModel)]="genere">
+    <input placeholder="Data di uscita" [(ngModel)]="dataDiUscita">
+    <span>Vieto ai minori <input type="checkbox" [(ngModel)]="vietatoAiMinori"></span>
+    <input type="number" placeholder="Durata" [(ngModel)]="durata">
+    <input placeholder="Immagine di copertina" [(ngModel)]="copertina">
+    <input type="number" placeholder="voto" [(ngModel)]="voto">
+    <!-- 
+        18)E COLLEGHIAMO IL METODO
+        'aggiungi()' AL BOTTONO TRAMITE 
+        BINDING
+     -->
+    <button *ngIf="!isEditMode" (click)="aggiungi()">Crea</button>
+    <!-- 
+        49)METTIAMO IL BOTTONE 
+        'salvaModifiche' COLLEGANDOLO 
+        AL METODO. 
+        METTIAMO ANCHE L'*ngIf' PER VISUALIZZARE
+        I BOTTONI SOLO SE SI TROVANO IN FASE DI MODIFICA
+        OPPURE NO (facciamolo anche al button 'aggiungi()')
+     -->
+     <button *ngIf="isEditMode" (click)="onCLickModifica()">Salva Modifiche</button>
+</div>
