@@ -1,0 +1,60 @@
+
+<!-- 
+  In questo esercizio non istanzieremo
+  tutti i componenti su di un unica pagina,
+  ma vederemo come utilizzare la navigazione
+  tra le pagine web, dove un componente 
+  avrà la sua pagina personale, la quale 
+  parlerà con un altra pagina, attraverso
+  dei link
+ -->
+<!-- <app-form></app-form>
+<app-form></app-form> -->
+
+<!-- 
+  app.component.html è il componente radice,
+   l'applicazione viene sempre renderizzata
+   a partire da questo componente.
+ -->
+<h1>Rosso Pomodoro</h1>
+
+<!-- 
+  5)PROVIAMO AD INSERIRE DEI LINK
+  IN MODO "SBAGLIATO" (poi modifichiamo).
+ -->
+ <!-- 
+  6)AGGIUNGIAMO LA 'class' 'nav-bar'
+  PER DARE UN PO DI STILE TRAMITE IL .css
+  -->
+<nav class="nav-bar">
+  <!-- 
+    22)ADESSO COMMENTIAMO QUESTI DUE LINK SOTTO-STANTI
+    PER MOSTRARE COME NAVIGARE TRA UNA PAGINA E L'ALTRA
+    SENZA DOVER RICARICARE OGNI VOLTA LA PAGINA,
+    CON LA CONSEGUENZA DI PERDERE I DATI OGNI VOLTA
+   -->
+   <!-- 
+    I link normali non vanno bene, perchè ricaricano la pagina.
+    Noi invece vogliamo sfruttare il meccanismo di routing
+    senza ricaricare l'app.
+    Ma vogliamo affidarci al framework per la navigazione.
+    Invede di utilizzare 'href' per dichiarare il link di 
+    navigazione, usiamo un attributo che viene introdotto dal modulo
+    di routing di angular in cui configuro la navigazione dell'ancorTag.
+    -->
+    <a routerLink="/">Home</a>
+    <a routerLink="/nuova-ricetta">Nuova Ricetta</a>
+  <!-- <a href="/">Home</a> -->
+  <!-- <a href="/nuova-ricetta">Nuova Ricetta</a> -->
+</nav>
+
+<!-- 
+  4)INSERIAMO QUESTO COMPONENTE 'SPECIALE'
+ -->
+ <!-- 
+  Questo componente 'speciale' di Angular, mi
+  permette di istanziare dinamicamente un componente
+  diverso a seconda delle regole definite tramite
+  la configurazione dei routes
+  -->
+<router-outlet></router-outlet> 

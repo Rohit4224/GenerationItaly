@@ -1,0 +1,22 @@
+<!-- 
+    27)E METTIAMO UN PO DI TAG PER 
+    VISUALIZZARE QUESTI DATI
+ -->
+<!-- <div>
+    <h2>Dettaglio della ricetta</h2>
+    <p>Id: {{ ricetta.id }}</p>
+    <p>Nome: {{ ricetta.nome }}</p>
+</div> -->
+<!--
+    37)ATTENZIONE!!!HO COMMENTATO LA 
+    PARTE SOPRA PER ANDARE AVANTI CON L'ESERCIZIO
+    SCOMMENTARE PER LE PRIME FASI QUELLO IN ALTO,
+    e POI UTILIZZARE I TAG SOTTO PER LE FASI
+    PIU' AVANZATE.
+ -->
+ <!-- Se esiste la ricetta mostrala a schermo -->
+<div *ngIf="ricetta">
+    <h2>Dettaglio della ricetta</h2>
+    <p>Id: {{ ricetta.id }}</p>
+    <p>Nome: {{ ricetta.nome }}</p>
+</div>

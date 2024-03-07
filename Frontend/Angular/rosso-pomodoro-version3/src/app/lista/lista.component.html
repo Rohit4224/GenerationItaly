@@ -1,0 +1,49 @@
+
+
+<!-- 
+    15)RENDERIZZIAMO LA LISTA DELLE RICETTE
+    MOSTRANDO IL NOME TRAMITE UN ITERAZIONE
+    DELL'ngFor, PIU UN INTERPOLAZIONE.
+ -->
+<ul>
+    <li *ngFor="let r of ricette">
+        <!-- 
+            29)E METTIAMO UN routerLink
+            PER LA NAVIGAZIONE
+         -->
+         
+        <!-- <a routerLink="/dettaglio"> **** DA SCOMMENTARE PER
+                                          PER LA PRIMA PROVA -->
+            <!-- 
+            30)METTIAMO A "/dettaglio"
+            UNA COSA IN PIU', COSI:
+            "/dettaglio/2"  ESATTAMENTE IN QUESTO MODO
+          -->
+          <!-- 
+            32)ADESSO RIMODIFICHIAMO:
+            TOGLIAMO IL NUMERO "/2" E
+            CI METTIAMO QUESTO AL SUO POSTO:
+            /{{r.id}}
+           -->
+           <!-- <a routerLink="/dettaglio/{{r.id}}"> ******-->
+               <!-- 
+                    proviamo ad interpolare l'id
+                    all'interno del link di navigazione
+                 -->
+            <!-- 
+                33)UN ALTRO MODO PER POTER 
+                CONCATENARE A DETTAGLIO DELLE 
+                PAGINE CON ID AUMENTATO
+                DINAMICAMENTE, TRAMITE IL propertyBinding
+             -->
+             <!-- 
+                 La differenza è che non devo in questo caso
+                 interpolare le varie parti, ma gli passo 
+                 direttamente un array di valori che compongono
+                 l'url finale.
+              -->
+           <a [routerLink]="['dettaglio', r.id]">
+            {{ r.nome }}
+        </a>
+    </li>
+</ul> 

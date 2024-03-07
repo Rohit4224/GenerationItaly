@@ -1,0 +1,17 @@
+
+/* 
+    7) IMPOSTIAMO UN PO' DI STILE PER
+    LA NAV-BAR (i tag per la navigazione).
+*/
+.nav-bar {
+
+    display: flex;
+    gap: 0.5rem;
+}
+ 
+.nav-bar > a {
+
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 0.5rem;
+}
