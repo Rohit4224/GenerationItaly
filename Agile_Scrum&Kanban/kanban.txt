@@ -41,5 +41,4 @@ In Kanban:
 
 
 
-
 Project Backlog : include Theme, Epic, Story, Task 
